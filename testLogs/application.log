@@ -1,0 +1,405 @@
+2022-05-20 03:48:25.417 [main] Log - Firefox Browser Session Started
+2022-05-20 03:48:25.502 [main] Log - ========================walletHubLogin TEST START ===================
+2022-05-20 03:48:34.357 [main] Log - Application openedhttps://wallethub.com/join/login
+2022-05-20 03:48:34.683 [main] Log - Verifying the page title is WalletHub Login
+2022-05-20 03:48:36.820 [main] Log - Clearing the text box[[FirefoxDriver: firefox on WINDOWS (53c61fd6-1e63-4277-9cde-b48883c34ef2)] -> id: email]
+2022-05-20 03:48:37.058 [main] Log - Entering text into text box[[FirefoxDriver: firefox on WINDOWS (53c61fd6-1e63-4277-9cde-b48883c34ef2)] -> id: email]
+2022-05-20 03:48:37.116 [main] Log - Clearing the text box[[FirefoxDriver: firefox on WINDOWS (53c61fd6-1e63-4277-9cde-b48883c34ef2)] -> id: password]
+2022-05-20 03:48:37.213 [main] Log - Entering text into text box[[FirefoxDriver: firefox on WINDOWS (53c61fd6-1e63-4277-9cde-b48883c34ef2)] -> id: password]
+2022-05-20 03:48:37.575 [main] Log - Click on element[[FirefoxDriver: firefox on WINDOWS (53c61fd6-1e63-4277-9cde-b48883c34ef2)] -> xpath: //button[ @class='btn blue center reg-tabs-bt touch-element-cl']]
+2022-05-20 03:48:41.393 [main] Log - Click on element[[FirefoxDriver: firefox on WINDOWS (53c61fd6-1e63-4277-9cde-b48883c34ef2)] -> xpath: //button[@class="btn blue touch-element-cl"]]
+2022-05-20 03:48:41.394 [main] Log - WalletHub login sucessful
+2022-05-20 03:48:41.394 [main] Log - ========================walletHubLogin TEST END ===================
+2022-05-20 03:48:41.423 [main] Log - ========================verifyReviewAndClickOnStars TEST START ===================
+2022-05-20 03:48:50.132 [main] Log - Application openedhttps://wallethub.com/profile/test-insurance-company-13732055i
+2022-05-20 03:48:50.819 [main] Log - Verifying the page title is test insurance company metatitle test
+2022-05-20 03:48:50.820 [main] Log - Checking post is present in page ?
+2022-05-20 03:49:18.420 [main] Log - Check already review posted or not
+2022-05-20 03:49:19.846 [main] Log - Hover over review star and click on  4  star done successfully
+2022-05-20 03:49:19.846 [main] Log - Hover over review stars and click on 4th star
+2022-05-20 03:49:19.847 [main] Log - ========================verifyReviewAndClickOnStars TEST END ===================
+2022-05-20 03:49:19.858 [main] Log - ========================reviewWriting TEST START ===================
+2022-05-20 03:49:20.015 [main] Log - Verifying the page contents
+2022-05-20 03:49:40.741 [main] Log - Select value from dropdown
+2022-05-20 03:49:43.418 [main] Log - Review writing into [[FirefoxDriver: firefox on WINDOWS (53c61fd6-1e63-4277-9cde-b48883c34ef2)] -> xpath: //*[@class="textarea wrev-user-input validate"]]
+2022-05-20 03:49:43.792 [main] Log - Click on [[FirefoxDriver: firefox on WINDOWS (53c61fd6-1e63-4277-9cde-b48883c34ef2)] -> xpath: //div[@class="sbn-action semi-bold-font btn fixed-w-c tall"]]button
+2022-05-20 03:49:43.792 [main] Log - Writing review
+2022-05-20 03:49:43.792 [main] Log - ========================reviewWriting TEST END ===================
+2022-05-20 03:49:43.800 [main] Log - ========================confirmReview TEST START ===================
+2022-05-20 03:49:43.991 [main] Log - Verifying the page contents
+2022-05-20 03:50:12.929 [main] Log - click on Proxy element for: DefaultElementLocator 'By.xpath: //*[text()='Continue']'
+2022-05-20 03:50:12.930 [main] Log - Confirming the review
+2022-05-20 03:50:12.930 [main] Log - ========================confirmReview TEST END ===================
+2022-05-20 03:50:12.948 [main] Log - ========================verifyReviewPosted TEST START ===================
+2022-05-20 03:50:13.585 [main] Log - Verified the user posted review present in page
+2022-05-20 03:50:16.266 [main] Log - Click on Profile option and page navigate to user profile
+2022-05-20 03:50:16.266 [main] Log - ========================verifyReviewPosted TEST END ===================
+2022-05-20 03:50:16.276 [main] Log - ========================validateUserProfilePage TEST START ===================
+2022-05-20 03:50:16.422 [main] Log - Verified user name on profile page
+2022-05-20 03:50:16.582 [main] Log - Verified review posted shows under profile
+2022-05-20 03:50:16.582 [main] Log - ========================validateUserProfilePage TEST END ===================
+2022-05-20 03:50:16.856 [main] Log - The screenshot of failed test  validateUserProfilePage captured
+2022-05-20 03:50:19.054 [main] Log - Browser Session terminated
+2022-05-20 03:55:59.162 [main] Log - Firefox Browser Session Started
+2022-05-20 03:55:59.252 [main] Log - ========================walletHubLogin TEST START ===================
+2022-05-20 03:56:11.153 [main] Log - Application openedhttps://wallethub.com/join/login
+2022-05-20 03:56:11.349 [main] Log - Verifying the page title is WalletHub Login
+2022-05-20 03:56:13.680 [main] Log - Clearing the text box[[FirefoxDriver: firefox on WINDOWS (2ee5dde4-149e-48c7-a8ea-5ae0bfda0c5d)] -> id: email]
+2022-05-20 03:56:13.942 [main] Log - Entering text into text box[[FirefoxDriver: firefox on WINDOWS (2ee5dde4-149e-48c7-a8ea-5ae0bfda0c5d)] -> id: email]
+2022-05-20 03:56:14.004 [main] Log - Clearing the text box[[FirefoxDriver: firefox on WINDOWS (2ee5dde4-149e-48c7-a8ea-5ae0bfda0c5d)] -> id: password]
+2022-05-20 03:56:14.123 [main] Log - Entering text into text box[[FirefoxDriver: firefox on WINDOWS (2ee5dde4-149e-48c7-a8ea-5ae0bfda0c5d)] -> id: password]
+2022-05-20 03:56:14.515 [main] Log - Click on element[[FirefoxDriver: firefox on WINDOWS (2ee5dde4-149e-48c7-a8ea-5ae0bfda0c5d)] -> xpath: //button[ @class='btn blue center reg-tabs-bt touch-element-cl']]
+2022-05-20 03:56:18.195 [main] Log - Click on element[[FirefoxDriver: firefox on WINDOWS (2ee5dde4-149e-48c7-a8ea-5ae0bfda0c5d)] -> xpath: //button[@class="btn blue touch-element-cl"]]
+2022-05-20 03:56:18.196 [main] Log - WalletHub login sucessful
+2022-05-20 03:56:18.196 [main] Log - ========================walletHubLogin TEST END ===================
+2022-05-20 03:56:18.220 [main] Log - ========================verifyReviewAndClickOnStars TEST START ===================
+2022-05-20 03:56:25.821 [main] Log - Application openedhttps://wallethub.com/profile/test-insurance-company-13732055i
+2022-05-20 03:56:26.195 [main] Log - Verifying the page title is test insurance company metatitle test
+2022-05-20 03:56:26.196 [main] Log - Checking post is present in page ?
+2022-05-20 03:56:43.030 [main] Log - Check already review posted or not
+2022-05-20 03:56:44.558 [main] Log - Hover over review star and click on  4  star done successfully
+2022-05-20 03:56:44.558 [main] Log - Hover over review stars and click on 4th star
+2022-05-20 03:56:44.558 [main] Log - ========================verifyReviewAndClickOnStars TEST END ===================
+2022-05-20 03:56:44.572 [main] Log - ========================reviewWriting TEST START ===================
+2022-05-20 03:56:44.780 [main] Log - Verifying the page contents
+2022-05-20 03:57:05.525 [main] Log - Select value from dropdown
+2022-05-20 03:57:08.186 [main] Log - Review writing into [[FirefoxDriver: firefox on WINDOWS (2ee5dde4-149e-48c7-a8ea-5ae0bfda0c5d)] -> xpath: //*[@class="textarea wrev-user-input validate"]]
+2022-05-20 03:57:08.589 [main] Log - Click on [[FirefoxDriver: firefox on WINDOWS (2ee5dde4-149e-48c7-a8ea-5ae0bfda0c5d)] -> xpath: //div[@class="sbn-action semi-bold-font btn fixed-w-c tall"]]button
+2022-05-20 03:57:08.590 [main] Log - Writing review
+2022-05-20 03:57:08.590 [main] Log - ========================reviewWriting TEST END ===================
+2022-05-20 03:57:08.597 [main] Log - ========================confirmReview TEST START ===================
+2022-05-20 03:57:08.783 [main] Log - Verifying the page contents
+2022-05-20 03:57:36.664 [main] Log - click on Proxy element for: DefaultElementLocator 'By.xpath: //*[text()='Continue']'
+2022-05-20 03:57:36.665 [main] Log - Confirming the review
+2022-05-20 03:57:36.665 [main] Log - ========================confirmReview TEST END ===================
+2022-05-20 03:57:36.671 [main] Log - ========================verifyReviewPosted TEST START ===================
+2022-05-20 03:57:36.833 [main] Log - Verified the user posted review present in page
+2022-05-20 03:57:39.540 [main] Log - Click on Profile option and page navigate to user profile
+2022-05-20 03:57:39.540 [main] Log - ========================verifyReviewPosted TEST END ===================
+2022-05-20 03:57:39.552 [main] Log - ========================validateUserProfilePage TEST START ===================
+2022-05-20 03:57:39.598 [main] Log - Verified user name on profile page
+2022-05-20 03:57:39.665 [main] Log - Verified review posted shows under profile
+2022-05-20 03:57:39.666 [main] Log - ========================validateUserProfilePage TEST END ===================
+2022-05-20 03:57:39.923 [main] Log - The screenshot of failed test  validateUserProfilePage captured
+2022-05-20 03:57:41.586 [main] Log - Browser Session terminated
+2022-05-20 04:04:14.211 [main] Log - Firefox Browser Session Started
+2022-05-20 04:04:14.299 [main] Log - ========================walletHubLogin TEST START ===================
+2022-05-20 04:04:34.633 [main] Log - The screenshot of failed test  walletHubLogin captured
+2022-05-20 04:04:36.306 [main] Log - Browser Session terminated
+2022-05-20 04:11:59.616 [main] Log - Chrome Browser Session Started
+2022-05-20 04:11:59.964 [main] Log - ========================walletHubLogin TEST START ===================
+2022-05-20 04:12:12.261 [main] Log - Application openedhttps://wallethub.com/join/login
+2022-05-20 04:12:12.383 [main] Log - Verifying the page title is WalletHub Login
+2022-05-20 04:12:20.916 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (466b0dc9f081186d7733a3e9052ffcbb)] -> id: email]
+2022-05-20 04:12:21.158 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (466b0dc9f081186d7733a3e9052ffcbb)] -> id: email]
+2022-05-20 04:12:21.274 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (466b0dc9f081186d7733a3e9052ffcbb)] -> id: password]
+2022-05-20 04:12:21.446 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (466b0dc9f081186d7733a3e9052ffcbb)] -> id: password]
+2022-05-20 04:12:21.665 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (466b0dc9f081186d7733a3e9052ffcbb)] -> xpath: //button[ @class='btn blue center reg-tabs-bt touch-element-cl']]
+2022-05-20 04:12:26.233 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (466b0dc9f081186d7733a3e9052ffcbb)] -> xpath: //button[@class="btn blue touch-element-cl"]]
+2022-05-20 04:12:26.234 [main] Log - WalletHub login sucessful
+2022-05-20 04:12:26.234 [main] Log - ========================walletHubLogin TEST END ===================
+2022-05-20 04:12:26.279 [main] Log - ========================verifyReviewAndClickOnStars TEST START ===================
+2022-05-20 04:12:36.582 [main] Log - Application openedhttps://wallethub.com/profile/test-insurance-company-13732055i
+2022-05-20 04:12:36.989 [main] Log - Verifying the page title is test insurance company metatitle test
+2022-05-20 04:12:36.990 [main] Log - Checking post is present in page ?
+2022-05-20 04:12:49.172 [main] Log - Check already review posted or not
+2022-05-20 04:12:50.661 [main] Log - Hover over review star and click on  4  star done successfully
+2022-05-20 04:12:50.662 [main] Log - Hover over review stars and click on 4th star
+2022-05-20 04:12:50.662 [main] Log - ========================verifyReviewAndClickOnStars TEST END ===================
+2022-05-20 04:12:50.680 [main] Log - ========================reviewWriting TEST START ===================
+2022-05-20 04:12:50.991 [main] Log - Verifying the page contents
+2022-05-20 04:13:11.629 [main] Log - Select value from dropdown
+2022-05-20 04:13:14.870 [main] Log - Review writing into [[ChromeDriver: chrome on WINDOWS (466b0dc9f081186d7733a3e9052ffcbb)] -> xpath: //*[@class="textarea wrev-user-input validate"]]
+2022-05-20 04:13:15.149 [main] Log - Click on [[ChromeDriver: chrome on WINDOWS (466b0dc9f081186d7733a3e9052ffcbb)] -> xpath: //div[@class="sbn-action semi-bold-font btn fixed-w-c tall"]]button
+2022-05-20 04:13:15.150 [main] Log - Writing review
+2022-05-20 04:13:15.150 [main] Log - ========================reviewWriting TEST END ===================
+2022-05-20 04:13:15.169 [main] Log - ========================confirmReview TEST START ===================
+2022-05-20 04:13:15.439 [main] Log - Verifying the page contents
+2022-05-20 04:13:46.426 [main] Log - click on Proxy element for: DefaultElementLocator 'By.xpath: //*[text()='Continue']'
+2022-05-20 04:13:46.426 [main] Log - Confirming the review
+2022-05-20 04:13:46.426 [main] Log - ========================confirmReview TEST END ===================
+2022-05-20 04:13:46.433 [main] Log - ========================verifyReviewPosted TEST START ===================
+2022-05-20 04:13:46.703 [main] Log - Verified the user posted review present in page
+2022-05-20 04:13:49.974 [main] Log - Click on Profile option and page navigate to user profile
+2022-05-20 04:13:49.974 [main] Log - ========================verifyReviewPosted TEST END ===================
+2022-05-20 04:13:49.982 [main] Log - ========================validateUserProfilePage TEST START ===================
+2022-05-20 04:13:50.182 [main] Log - Verified user name on profile page
+2022-05-20 04:13:50.251 [main] Log - Verified review posted shows under profile
+2022-05-20 04:13:50.251 [main] Log - ========================validateUserProfilePage TEST END ===================
+2022-05-20 04:13:50.488 [main] Log - The screenshot of failed test  validateUserProfilePage captured
+2022-05-20 04:13:51.129 [main] Log - Browser Session terminated
+2022-05-20 04:21:50.811 [main] Log - Chrome Browser Session Started
+2022-05-20 04:21:51.043 [main] Log - ========================walletHubLogin TEST START ===================
+2022-05-20 04:21:57.563 [main] Log - Application openedhttps://wallethub.com/join/login
+2022-05-20 04:21:57.649 [main] Log - Verifying the page title is WalletHub Login
+2022-05-20 04:22:01.641 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (106b2594b3a63c87396880565e7f66ef)] -> id: email]
+2022-05-20 04:22:01.904 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (106b2594b3a63c87396880565e7f66ef)] -> id: email]
+2022-05-20 04:22:01.993 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (106b2594b3a63c87396880565e7f66ef)] -> id: password]
+2022-05-20 04:22:02.137 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (106b2594b3a63c87396880565e7f66ef)] -> id: password]
+2022-05-20 04:22:02.347 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (106b2594b3a63c87396880565e7f66ef)] -> xpath: //button[ @class='btn blue center reg-tabs-bt touch-element-cl']]
+2022-05-20 04:22:09.272 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (106b2594b3a63c87396880565e7f66ef)] -> xpath: //button[@class="btn blue touch-element-cl"]]
+2022-05-20 04:22:09.273 [main] Log - WalletHub login sucessful
+2022-05-20 04:22:09.274 [main] Log - ========================walletHubLogin TEST END ===================
+2022-05-20 04:22:09.313 [main] Log - ========================verifyReviewAndClickOnStars TEST START ===================
+2022-05-20 04:22:27.603 [main] Log - Application openedhttps://wallethub.com/profile/test-insurance-company-13732055i
+2022-05-20 04:22:28.197 [main] Log - Verifying the page title is test insurance company metatitle test
+2022-05-20 04:22:28.198 [main] Log - Checking post is present in page ?
+2022-05-20 04:22:41.190 [main] Log - Check already review posted or not
+2022-05-20 04:22:42.650 [main] Log - Hover over review star and click on  4  star done successfully
+2022-05-20 04:22:42.650 [main] Log - Hover over review stars and click on 4th star
+2022-05-20 04:22:42.650 [main] Log - ========================verifyReviewAndClickOnStars TEST END ===================
+2022-05-20 04:22:42.673 [main] Log - ========================reviewWriting TEST START ===================
+2022-05-20 04:22:42.989 [main] Log - Verifying the page contents
+2022-05-20 04:23:03.543 [main] Log - Select value from dropdown
+2022-05-20 04:23:05.826 [main] Log - Review writing into [[ChromeDriver: chrome on WINDOWS (106b2594b3a63c87396880565e7f66ef)] -> xpath: //*[@class="textarea wrev-user-input validate"]]
+2022-05-20 04:23:06.000 [main] Log - Click on [[ChromeDriver: chrome on WINDOWS (106b2594b3a63c87396880565e7f66ef)] -> xpath: //div[@class="sbn-action semi-bold-font btn fixed-w-c tall"]]button
+2022-05-20 04:23:06.000 [main] Log - Writing review
+2022-05-20 04:23:06.001 [main] Log - ========================reviewWriting TEST END ===================
+2022-05-20 04:23:06.011 [main] Log - ========================confirmReview TEST START ===================
+2022-05-20 04:23:06.307 [main] Log - Verifying the page contents
+2022-05-20 04:23:35.503 [main] Log - click on Proxy element for: DefaultElementLocator 'By.xpath: //*[text()='Continue']'
+2022-05-20 04:23:35.504 [main] Log - Confirming the review
+2022-05-20 04:23:35.505 [main] Log - ========================confirmReview TEST END ===================
+2022-05-20 04:23:35.522 [main] Log - ========================verifyReviewPosted TEST START ===================
+2022-05-20 04:23:35.730 [main] Log - Verified the user posted review present in page
+2022-05-20 04:23:38.795 [main] Log - Click on Profile option and page navigate to user profile
+2022-05-20 04:23:38.796 [main] Log - ========================verifyReviewPosted TEST END ===================
+2022-05-20 04:23:38.807 [main] Log - ========================validateUserProfilePage TEST START ===================
+2022-05-20 04:23:39.013 [main] Log - Verified user name on profile page
+2022-05-20 04:23:39.246 [main] Log - Verified review posted shows under profile
+2022-05-20 04:23:39.247 [main] Log - ========================validateUserProfilePage TEST END ===================
+2022-05-20 04:23:39.781 [main] Log - Browser Session terminated
+2022-05-20 05:20:19.070 [main] Log - Chrome Browser Session Started
+2022-05-20 05:20:19.261 [main] Log - ========================FacebookLogin TEST START ===================
+2022-05-20 05:20:26.621 [main] Log - Application openedhttps://www.facebook.com/
+2022-05-20 05:20:28.196 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (7bc6abe458224d12b0e604b5bc522164)] -> id: email]
+2022-05-20 05:20:28.385 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (7bc6abe458224d12b0e604b5bc522164)] -> id: email]
+2022-05-20 05:20:28.474 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (7bc6abe458224d12b0e604b5bc522164)] -> id: pass]
+2022-05-20 05:20:28.634 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (7bc6abe458224d12b0e604b5bc522164)] -> id: pass]
+2022-05-20 05:20:40.518 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (7bc6abe458224d12b0e604b5bc522164)] -> xpath: //*[text()='Log In' and @name='login']]
+2022-05-20 05:20:40.519 [main] Log - ========================FacebookLogin TEST END ===================
+2022-05-20 05:20:40.543 [main] Log - ========================FacebookPost TEST START ===================
+2022-05-20 05:20:42.729 [main] Log - Verifying profile name
+2022-05-20 05:20:43.206 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (7bc6abe458224d12b0e604b5bc522164)] -> xpath: //a[@href="/me/" and @role='link']]
+2022-05-20 05:20:52.462 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (7bc6abe458224d12b0e604b5bc522164)] -> xpath: //*[@class="m9osqain a5q79mjw gy2v8mqq jm1wdb64 k4urcfbm qv66sw1b"]]
+2022-05-20 05:20:55.421 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (7bc6abe458224d12b0e604b5bc522164)] -> xpath: //*[@class="_1mf _1mj"]]
+2022-05-20 05:20:55.746 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (7bc6abe458224d12b0e604b5bc522164)] -> xpath: //*[@class="k4urcfbm discj3wi dati1w0a hv4rvrfc i1fnvgqd j83agx80 rq0escxv bp9cbjyn"]]
+2022-05-20 05:20:55.747 [main] Log - Facebook Post sucessfully
+2022-05-20 05:20:55.747 [main] Log - ========================FacebookPost TEST END ===================
+2022-05-20 05:20:57.085 [main] Log - Browser Session terminated
+2022-05-20 05:20:58.926 [main] Log - Chrome Browser Session Started
+2022-05-20 05:20:59.146 [main] Log - ========================walletHubLogin TEST START ===================
+2022-05-20 05:21:16.298 [main] Log - Application openedhttps://wallethub.com/join/login
+2022-05-20 05:21:16.461 [main] Log - Verifying the page title is WalletHub Login
+2022-05-20 05:21:16.720 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (a83a55cfff72ebe834eefac7520ea29a)] -> id: email]
+2022-05-20 05:21:16.949 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (a83a55cfff72ebe834eefac7520ea29a)] -> id: email]
+2022-05-20 05:21:17.033 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (a83a55cfff72ebe834eefac7520ea29a)] -> id: password]
+2022-05-20 05:21:17.166 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (a83a55cfff72ebe834eefac7520ea29a)] -> id: password]
+2022-05-20 05:21:17.446 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (a83a55cfff72ebe834eefac7520ea29a)] -> xpath: //button[ @class='btn blue center reg-tabs-bt touch-element-cl']]
+2022-05-20 05:21:27.328 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (a83a55cfff72ebe834eefac7520ea29a)] -> xpath: //button[@class="btn blue touch-element-cl"]]
+2022-05-20 05:21:27.328 [main] Log - WalletHub login sucessful
+2022-05-20 05:21:27.328 [main] Log - ========================walletHubLogin TEST END ===================
+2022-05-20 05:21:27.340 [main] Log - ========================verifyReviewAndClickOnStars TEST START ===================
+2022-05-20 05:21:45.735 [main] Log - Application openedhttps://wallethub.com/profile/test-insurance-company-13732055i
+2022-05-20 05:21:47.988 [main] Log - Verifying the page title is test insurance company metatitle test
+2022-05-20 05:21:47.988 [main] Log - Checking post is present in page ?
+2022-05-20 05:22:06.473 [main] Log - Check already review posted or not
+2022-05-20 05:22:08.584 [main] Log - Hover over review star and click on  4  star done successfully
+2022-05-20 05:22:08.585 [main] Log - Hover over review stars and click on 4th star
+2022-05-20 05:22:08.585 [main] Log - ========================verifyReviewAndClickOnStars TEST END ===================
+2022-05-20 05:22:08.642 [main] Log - ========================reviewWriting TEST START ===================
+2022-05-20 05:22:08.951 [main] Log - Verifying the page contents
+2022-05-20 05:22:29.664 [main] Log - Select value from dropdown
+2022-05-20 05:22:32.158 [main] Log - Review writing into [[ChromeDriver: chrome on WINDOWS (a83a55cfff72ebe834eefac7520ea29a)] -> xpath: //*[@class="textarea wrev-user-input validate"]]
+2022-05-20 05:22:32.320 [main] Log - Click on [[ChromeDriver: chrome on WINDOWS (a83a55cfff72ebe834eefac7520ea29a)] -> xpath: //div[@class="sbn-action semi-bold-font btn fixed-w-c tall"]]button
+2022-05-20 05:22:32.320 [main] Log - Writing review
+2022-05-20 05:22:32.320 [main] Log - ========================reviewWriting TEST END ===================
+2022-05-20 05:22:32.327 [main] Log - ========================confirmReview TEST START ===================
+2022-05-20 05:22:32.555 [main] Log - Verifying the page contents
+2022-05-20 05:23:04.764 [main] Log - click on Proxy element for: DefaultElementLocator 'By.xpath: //*[text()='Continue']'
+2022-05-20 05:23:04.765 [main] Log - Confirming the review
+2022-05-20 05:23:04.766 [main] Log - ========================confirmReview TEST END ===================
+2022-05-20 05:23:04.779 [main] Log - ========================verifyReviewPosted TEST START ===================
+2022-05-20 05:23:04.985 [main] Log - Verified the user posted review present in page
+2022-05-20 05:23:10.439 [main] Log - Click on Profile option and page navigate to user profile
+2022-05-20 05:23:10.440 [main] Log - ========================verifyReviewPosted TEST END ===================
+2022-05-20 05:23:10.445 [main] Log - ========================validateUserProfilePage TEST START ===================
+2022-05-20 05:23:10.528 [main] Log - Verified user name on profile page
+2022-05-20 05:23:31.309 [main] Log - The screenshot of failed test  validateUserProfilePage captured
+2022-05-20 05:23:31.793 [main] Log - Browser Session terminated
+2022-05-20 05:30:43.568 [main] Log - Chrome Browser Session Started
+2022-05-20 05:30:43.845 [main] Log - ========================FacebookLogin TEST START ===================
+2022-05-20 05:30:59.894 [main] Log - Application openedhttps://www.facebook.com/
+2022-05-20 05:31:02.711 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (7dd08f403a8dcf9842cfd7f19640a656)] -> id: email]
+2022-05-20 05:31:02.889 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (7dd08f403a8dcf9842cfd7f19640a656)] -> id: email]
+2022-05-20 05:31:02.982 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (7dd08f403a8dcf9842cfd7f19640a656)] -> id: pass]
+2022-05-20 05:31:03.144 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (7dd08f403a8dcf9842cfd7f19640a656)] -> id: pass]
+2022-05-20 05:31:14.203 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (7dd08f403a8dcf9842cfd7f19640a656)] -> xpath: //*[text()='Log In' and @name='login']]
+2022-05-20 05:31:14.203 [main] Log - ========================FacebookLogin TEST END ===================
+2022-05-20 05:31:14.228 [main] Log - ========================FacebookPost TEST START ===================
+2022-05-20 05:31:15.960 [main] Log - Verifying profile name
+2022-05-20 05:31:16.928 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (7dd08f403a8dcf9842cfd7f19640a656)] -> xpath: //a[@href="/me/" and @role='link']]
+2022-05-20 05:31:26.038 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (7dd08f403a8dcf9842cfd7f19640a656)] -> xpath: //*[@class="m9osqain a5q79mjw gy2v8mqq jm1wdb64 k4urcfbm qv66sw1b"]]
+2022-05-20 05:31:28.817 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (7dd08f403a8dcf9842cfd7f19640a656)] -> xpath: //*[@class="_1mf _1mj"]]
+2022-05-20 05:31:29.016 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (7dd08f403a8dcf9842cfd7f19640a656)] -> xpath: //*[@class="k4urcfbm discj3wi dati1w0a hv4rvrfc i1fnvgqd j83agx80 rq0escxv bp9cbjyn"]]
+2022-05-20 05:31:29.017 [main] Log - Facebook Post sucessfully
+2022-05-20 05:31:29.017 [main] Log - ========================FacebookPost TEST END ===================
+2022-05-20 05:31:29.509 [main] Log - Browser Session terminated
+2022-05-20 05:31:30.862 [main] Log - Chrome Browser Session Started
+2022-05-20 05:31:31.244 [main] Log - ========================walletHubLogin TEST START ===================
+2022-05-20 05:31:48.486 [main] Log - Application openedhttps://wallethub.com/join/login
+2022-05-20 05:31:48.609 [main] Log - Verifying the page title is WalletHub Login
+2022-05-20 05:31:48.996 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (35ed98a61b10947b44f5b4d8bef00551)] -> id: email]
+2022-05-20 05:31:49.212 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (35ed98a61b10947b44f5b4d8bef00551)] -> id: email]
+2022-05-20 05:31:49.296 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (35ed98a61b10947b44f5b4d8bef00551)] -> id: password]
+2022-05-20 05:31:49.423 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (35ed98a61b10947b44f5b4d8bef00551)] -> id: password]
+2022-05-20 05:31:49.620 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (35ed98a61b10947b44f5b4d8bef00551)] -> xpath: //button[ @class='btn blue center reg-tabs-bt touch-element-cl']]
+2022-05-20 05:31:58.211 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (35ed98a61b10947b44f5b4d8bef00551)] -> xpath: //button[@class="btn blue touch-element-cl"]]
+2022-05-20 05:31:58.211 [main] Log - WalletHub login sucessful
+2022-05-20 05:31:58.211 [main] Log - ========================walletHubLogin TEST END ===================
+2022-05-20 05:31:58.231 [main] Log - ========================verifyReviewAndClickOnStars TEST START ===================
+2022-05-20 05:32:11.550 [main] Log - Application openedhttps://wallethub.com/profile/test-insurance-company-13732055i
+2022-05-20 05:32:11.953 [main] Log - Verifying the page title is test insurance company metatitle test
+2022-05-20 05:32:11.953 [main] Log - Checking post is present in page ?
+2022-05-20 05:32:24.553 [main] Log - Check already review posted or not
+2022-05-20 05:32:27.978 [main] Log - Hover over review star and click on  4  star done successfully
+2022-05-20 05:32:27.979 [main] Log - Hover over review stars and click on 4th star
+2022-05-20 05:32:27.979 [main] Log - ========================verifyReviewAndClickOnStars TEST END ===================
+2022-05-20 05:32:27.995 [main] Log - ========================reviewWriting TEST START ===================
+2022-05-20 05:32:28.366 [main] Log - Verifying the page contents
+2022-05-20 05:32:48.991 [main] Log - Select value from dropdown
+2022-05-20 05:32:51.515 [main] Log - Review writing into [[ChromeDriver: chrome on WINDOWS (35ed98a61b10947b44f5b4d8bef00551)] -> xpath: //*[@class="textarea wrev-user-input validate"]]
+2022-05-20 05:32:51.684 [main] Log - Click on [[ChromeDriver: chrome on WINDOWS (35ed98a61b10947b44f5b4d8bef00551)] -> xpath: //div[@class="sbn-action semi-bold-font btn fixed-w-c tall"]]button
+2022-05-20 05:32:51.684 [main] Log - Writing review
+2022-05-20 05:32:51.685 [main] Log - ========================reviewWriting TEST END ===================
+2022-05-20 05:32:51.693 [main] Log - ========================confirmReview TEST START ===================
+2022-05-20 05:32:51.958 [main] Log - Verifying the page contents
+2022-05-20 05:33:22.244 [main] Log - click on Proxy element for: DefaultElementLocator 'By.xpath: //*[text()='Continue']'
+2022-05-20 05:33:22.244 [main] Log - Confirming the review
+2022-05-20 05:33:22.244 [main] Log - ========================confirmReview TEST END ===================
+2022-05-20 05:33:22.254 [main] Log - ========================verifyReviewPosted TEST START ===================
+2022-05-20 05:33:22.464 [main] Log - Verified the user posted review present in page
+2022-05-20 05:33:25.411 [main] Log - Click on Profile option and page navigate to user profile
+2022-05-20 05:33:25.411 [main] Log - ========================verifyReviewPosted TEST END ===================
+2022-05-20 05:33:25.422 [main] Log - ========================validateUserProfilePage TEST START ===================
+2022-05-20 05:33:25.596 [main] Log - Verified user name on profile page
+2022-05-20 05:33:25.792 [main] Log - Verified review posted shows under profile
+2022-05-20 05:33:25.792 [main] Log - ========================validateUserProfilePage TEST END ===================
+2022-05-20 05:33:26.161 [main] Log - Browser Session terminated
+2022-05-20 05:41:41.100 [main] Log - Chrome Browser Session Started
+2022-05-20 05:41:41.298 [main] Log - ========================FacebookLogin TEST START ===================
+2022-05-20 05:41:48.232 [main] Log - Application openedhttps://www.facebook.com/
+2022-05-20 05:41:50.113 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (c03b83aa42bd0467501ff14fe1ecb363)] -> id: email]
+2022-05-20 05:41:50.299 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (c03b83aa42bd0467501ff14fe1ecb363)] -> id: email]
+2022-05-20 05:41:50.423 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (c03b83aa42bd0467501ff14fe1ecb363)] -> id: pass]
+2022-05-20 05:41:50.564 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (c03b83aa42bd0467501ff14fe1ecb363)] -> id: pass]
+2022-05-20 05:41:59.461 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (c03b83aa42bd0467501ff14fe1ecb363)] -> xpath: //*[text()='Log In' and @name='login']]
+2022-05-20 05:41:59.461 [main] Log - ========================FacebookLogin TEST END ===================
+2022-05-20 05:41:59.484 [main] Log - ========================FacebookPost TEST START ===================
+2022-05-20 05:42:00.819 [main] Log - The screenshot of failed test  FacebookPost captured
+2022-05-20 05:42:01.522 [main] Log - Browser Session terminated
+2022-05-20 05:42:03.055 [main] Log - Chrome Browser Session Started
+2022-05-20 05:42:03.240 [main] Log - ========================walletHubLogin TEST START ===================
+2022-05-20 05:42:17.315 [main] Log - Application openedhttps://wallethub.com/join/login
+2022-05-20 05:42:17.400 [main] Log - Verifying the page title is WalletHub Login
+2022-05-20 05:42:17.744 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (d5dba2692bb06e41f241e09bc0e356eb)] -> id: email]
+2022-05-20 05:42:18.026 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (d5dba2692bb06e41f241e09bc0e356eb)] -> id: email]
+2022-05-20 05:42:18.162 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (d5dba2692bb06e41f241e09bc0e356eb)] -> id: password]
+2022-05-20 05:42:18.348 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (d5dba2692bb06e41f241e09bc0e356eb)] -> id: password]
+2022-05-20 05:42:18.526 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (d5dba2692bb06e41f241e09bc0e356eb)] -> xpath: //button[ @class='btn blue center reg-tabs-bt touch-element-cl']]
+2022-05-20 05:42:26.979 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (d5dba2692bb06e41f241e09bc0e356eb)] -> xpath: //button[@class="btn blue touch-element-cl"]]
+2022-05-20 05:42:26.979 [main] Log - WalletHub login sucessful
+2022-05-20 05:42:26.980 [main] Log - ========================walletHubLogin TEST END ===================
+2022-05-20 05:42:26.985 [main] Log - ========================verifyReviewAndClickOnStars TEST START ===================
+2022-05-20 05:42:37.733 [main] Log - Application openedhttps://wallethub.com/profile/test-insurance-company-13732055i
+2022-05-20 05:42:38.028 [main] Log - Verifying the page title is test insurance company metatitle test
+2022-05-20 05:42:38.028 [main] Log - Checking post is present in page ?
+2022-05-20 05:42:49.897 [main] Log - Check already review posted or not
+2022-05-20 05:42:51.382 [main] Log - Hover over review star and click on  4  star done successfully
+2022-05-20 05:42:51.383 [main] Log - Hover over review stars and click on 4th star
+2022-05-20 05:42:51.384 [main] Log - ========================verifyReviewAndClickOnStars TEST END ===================
+2022-05-20 05:42:51.396 [main] Log - ========================reviewWriting TEST START ===================
+2022-05-20 05:42:51.597 [main] Log - Verifying the page contents
+2022-05-20 05:42:51.753 [main] Log - Select value from dropdown
+2022-05-20 05:42:54.316 [main] Log - Review writing into [[ChromeDriver: chrome on WINDOWS (d5dba2692bb06e41f241e09bc0e356eb)] -> xpath: //*[@class="textarea wrev-user-input validate"]]
+2022-05-20 05:42:54.476 [main] Log - Click on [[ChromeDriver: chrome on WINDOWS (d5dba2692bb06e41f241e09bc0e356eb)] -> xpath: //div[@class="sbn-action semi-bold-font btn fixed-w-c tall"]]button
+2022-05-20 05:42:54.477 [main] Log - Writing review
+2022-05-20 05:42:54.477 [main] Log - ========================reviewWriting TEST END ===================
+2022-05-20 05:42:54.480 [main] Log - ========================confirmReview TEST START ===================
+2022-05-20 05:42:54.676 [main] Log - Verifying the page contents
+2022-05-20 05:43:34.830 [main] Log - click on Proxy element for: DefaultElementLocator 'By.xpath: //*[text()='Continue']'
+2022-05-20 05:43:34.830 [main] Log - Confirming the review
+2022-05-20 05:43:34.830 [main] Log - ========================confirmReview TEST END ===================
+2022-05-20 05:43:34.836 [main] Log - ========================verifyReviewPosted TEST START ===================
+2022-05-20 05:43:35.020 [main] Log - Verified the user posted review present in page
+2022-05-20 05:43:55.132 [main] Log - Click on Profile option and page navigate to user profile
+2022-05-20 05:43:55.132 [main] Log - ========================verifyReviewPosted TEST END ===================
+2022-05-20 05:43:55.137 [main] Log - ========================validateUserProfilePage TEST START ===================
+2022-05-20 05:43:55.241 [main] Log - Verified user name on profile page
+2022-05-20 05:44:15.373 [main] Log - The screenshot of failed test  validateUserProfilePage captured
+2022-05-20 05:44:16.006 [main] Log - Browser Session terminated
+2022-05-20 05:49:49.795 [main] Log - Chrome Browser Session Started
+2022-05-20 05:49:50.031 [main] Log - ========================FacebookLogin TEST START ===================
+2022-05-20 05:49:56.800 [main] Log - Application openedhttps://www.facebook.com/
+2022-05-20 05:49:58.529 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (508211f4460665ac2b5d65f686ae69ea)] -> id: email]
+2022-05-20 05:49:58.742 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (508211f4460665ac2b5d65f686ae69ea)] -> id: email]
+2022-05-20 05:49:58.857 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (508211f4460665ac2b5d65f686ae69ea)] -> id: pass]
+2022-05-20 05:49:59.007 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (508211f4460665ac2b5d65f686ae69ea)] -> id: pass]
+2022-05-20 05:50:08.405 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (508211f4460665ac2b5d65f686ae69ea)] -> xpath: //*[text()='Log In' and @name='login']]
+2022-05-20 05:50:08.406 [main] Log - ========================FacebookLogin TEST END ===================
+2022-05-20 05:50:08.427 [main] Log - ========================FacebookPost TEST START ===================
+2022-05-20 05:50:13.354 [main] Log - The screenshot of failed test  FacebookPost captured
+2022-05-20 05:50:14.096 [main] Log - Browser Session terminated
+2022-05-20 05:50:15.520 [main] Log - Chrome Browser Session Started
+2022-05-20 05:50:15.672 [main] Log - ========================walletHubLogin TEST START ===================
+2022-05-20 05:50:21.884 [main] Log - Application openedhttps://wallethub.com/join/login
+2022-05-20 05:50:21.974 [main] Log - Verifying the page title is WalletHub Login
+2022-05-20 05:50:25.231 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (89770c3be86139b8c94f0b71625cb779)] -> id: email]
+2022-05-20 05:50:25.433 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (89770c3be86139b8c94f0b71625cb779)] -> id: email]
+2022-05-20 05:50:25.553 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (89770c3be86139b8c94f0b71625cb779)] -> id: password]
+2022-05-20 05:50:25.730 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (89770c3be86139b8c94f0b71625cb779)] -> id: password]
+2022-05-20 05:50:25.888 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (89770c3be86139b8c94f0b71625cb779)] -> xpath: //button[ @class='btn blue center reg-tabs-bt touch-element-cl']]
+2022-05-20 05:50:31.519 [main] Log - Click on element[[ChromeDriver: chrome on WINDOWS (89770c3be86139b8c94f0b71625cb779)] -> xpath: //button[@class="btn blue touch-element-cl"]]
+2022-05-20 05:50:31.520 [main] Log - WalletHub login sucessful
+2022-05-20 05:50:31.520 [main] Log - ========================walletHubLogin TEST END ===================
+2022-05-20 05:50:31.524 [main] Log - ========================verifyReviewAndClickOnStars TEST START ===================
+2022-05-20 05:50:40.651 [main] Log - Application openedhttps://wallethub.com/profile/test-insurance-company-13732055i
+2022-05-20 05:50:40.979 [main] Log - Verifying the page title is test insurance company metatitle test
+2022-05-20 05:50:40.979 [main] Log - Checking post is present in page ?
+2022-05-20 05:50:41.170 [main] Log - Check already review posted or not
+2022-05-20 05:50:42.453 [main] Log - Hover over review star and click on  4  star done successfully
+2022-05-20 05:50:42.453 [main] Log - Hover over review stars and click on 4th star
+2022-05-20 05:50:42.454 [main] Log - ========================verifyReviewAndClickOnStars TEST END ===================
+2022-05-20 05:50:42.466 [main] Log - ========================reviewWriting TEST START ===================
+2022-05-20 05:50:42.646 [main] Log - Verifying the page contents
+2022-05-20 05:50:42.862 [main] Log - Select value from dropdown
+2022-05-20 05:50:45.874 [main] Log - Review writing into [[ChromeDriver: chrome on WINDOWS (89770c3be86139b8c94f0b71625cb779)] -> xpath: //*[@class="textarea wrev-user-input validate"]]
+2022-05-20 05:50:46.096 [main] Log - Click on [[ChromeDriver: chrome on WINDOWS (89770c3be86139b8c94f0b71625cb779)] -> xpath: //div[@class="sbn-action semi-bold-font btn fixed-w-c tall"]]button
+2022-05-20 05:50:46.096 [main] Log - Writing review
+2022-05-20 05:50:46.096 [main] Log - ========================reviewWriting TEST END ===================
+2022-05-20 05:50:46.100 [main] Log - ========================confirmReview TEST START ===================
+2022-05-20 05:50:46.364 [main] Log - Verifying the page contents
+2022-05-20 05:51:26.505 [main] Log - click on Proxy element for: DefaultElementLocator 'By.xpath: //*[text()='Continue']'
+2022-05-20 05:51:26.506 [main] Log - Confirming the review
+2022-05-20 05:51:26.506 [main] Log - ========================confirmReview TEST END ===================
+2022-05-20 05:51:26.511 [main] Log - ========================verifyReviewPosted TEST START ===================
+2022-05-20 05:51:26.721 [main] Log - Verified the user posted review present in page
+2022-05-20 05:51:46.857 [main] Log - Click on Profile option and page navigate to user profile
+2022-05-20 05:51:46.857 [main] Log - ========================verifyReviewPosted TEST END ===================
+2022-05-20 05:51:46.861 [main] Log - ========================validateUserProfilePage TEST START ===================
+2022-05-20 05:51:46.987 [main] Log - Verified user name on profile page
+2022-05-20 05:52:07.275 [main] Log - The screenshot of failed test  validateUserProfilePage captured
+2022-05-20 05:52:08.238 [main] Log - Browser Session terminated
+2022-05-20 06:03:01.574 [main] Log - Chrome Browser Session Started
+2022-05-20 06:03:01.876 [main] Log - ========================FacebookLogin TEST START ===================
+2022-05-20 06:03:14.435 [main] Log - Application openedhttps://www.facebook.com/
+2022-05-20 06:03:16.675 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (3928d6de75a3257f2271d92947d648d1)] -> id: email]
+2022-05-20 06:03:16.892 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (3928d6de75a3257f2271d92947d648d1)] -> id: email]
+2022-05-20 06:03:17.006 [main] Log - Clearing the text box[[ChromeDriver: chrome on WINDOWS (3928d6de75a3257f2271d92947d648d1)] -> id: pass]
+2022-05-20 06:03:17.710 [main] Log - Entering text into text box[[ChromeDriver: chrome on WINDOWS (3928d6de75a3257f2271d92947d648d1)] -> id: pass]
+2022-05-20 06:03:38.430 [main] Log - The screenshot of failed test  FacebookLogin captured
+2022-05-20 06:03:39.161 [main] Log - Browser Session terminated
+2022-05-20 06:03:41.102 [main] Log - Chrome Browser Session Started
+2022-05-20 06:03:41.264 [main] Log - ========================walletHubLogin TEST START ===================
+2022-05-20 06:04:01.432 [main] Log - The screenshot of failed test  walletHubLogin captured
+2022-05-20 06:04:02.053 [main] Log - Browser Session terminated

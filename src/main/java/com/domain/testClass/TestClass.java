@@ -1,8 +1,8 @@
 package com.domain.testClass;
 
 import java.util.List;
-
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,8 +12,20 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestClass {
-	WebDriver driver;
+	public WebDriver driver;
+	public WebDriverWait wait;
+	public JavascriptExecutor js;
+	public Actions builder;
 	
+	
+	//Constructor
+    public TestClass(WebDriver driver) {
+        this.driver = driver;
+        this.builder = new Actions(driver);
+        this.js = (JavascriptExecutor) this.driver;
+        wait = new WebDriverWait(driver, 10);
+    }
+
 	/*Method to clear textbox*/
 	public void clearText(WebElement element) {  
 		try {
@@ -28,7 +40,7 @@ public class TestClass {
 		try {
 			element.sendKeys(text);
 		} catch (Exception e) {
-			System.out.println("Exception occured wile entering text");
+			System.out.println("Exception occured while entering text");
 		}
         
  } 
@@ -42,12 +54,6 @@ public class TestClass {
 		}
         
  }
-	
-	/*Method to get element text*/
-	public String getElementText(WebElement element) {
-		return element.getText();
-        
-    }
 	
 	/*Method to to check element displayed or not*/
 	 public boolean isElementDisplayed(WebElement element, By by) {
@@ -75,7 +81,7 @@ public class TestClass {
 	public void selectOptionFromDropdown(WebElement element, String valueToSelect) {
 		List<WebElement> allOptions = element.findElements(By.tagName("li"));
 		for (WebElement option : allOptions) {
-			   System.out.println("Option value "+option.getText());
+			  // System.out.println("Option value "+option.getText());
 			        if (valueToSelect.equals(option.getText())) {
 			            option.click();
 			            break;
@@ -89,7 +95,7 @@ public class TestClass {
 	public void selectOptionFromCheckbox(WebElement element, String valueToSelect) {
 		List<WebElement> allOptions = element.findElements(By.tagName("input"));
 		for (WebElement option : allOptions) {
-			   System.out.println("Option value "+option.getText());
+			  // System.out.println("Option value "+option.getText());
 			        if (valueToSelect.equals(option.getText())) {
 			            option.click();
 			            break;
@@ -108,7 +114,7 @@ public class TestClass {
 		boolean flag = false;
 		try {
 			new WebDriverWait(driver, waitTime).ignoring(StaleElementReferenceException.class)
-					.until(ExpectedConditions.elementToBeClickable(element));
+					.until(ExpectedConditions.elementToBeClickable((By)element));
 			flag = true;
 			return flag;
 
@@ -139,20 +145,47 @@ public class TestClass {
 	 * This method is used to wait for element till visibility of element.
 	 * 
 	 * @param driver
-	 * @param attributeValue - provide locator value of element till it is visible
+	 * @param locator - provide locator value of element till it is visible
 	 *                       on application and then click that element.
 	 * @param waitTime       - provide maximum wait time in seconds for driver
 	 */
-	public boolean waitForElementToBeVisible(WebDriver driver, By attributeValue, int waitTime) {
+	public boolean waitForElementToBeVisible(WebDriver driver, WebElement locator, int waitTime) {
 		boolean flag = false;
 		try {
 			new WebDriverWait(driver, waitTime).ignoring(StaleElementReferenceException.class)
-					.until(ExpectedConditions.visibilityOfElementLocated(attributeValue));
+					.until(ExpectedConditions.visibilityOfElementLocated((By) locator));
 			flag = true;
 			return flag;
 		} catch (Exception Ex) {
 			return flag;
 		}
+	}
+	
+	
+	/* Move to Element  Action in Selenium */
+	/**
+	 * This method is used to Move to Element and perform Click Action.
+	 * 
+	 * @param driver
+	 * @param attributeValue - provide locator value of element till it is visible
+	 *                       on application and then click that element.
+	 * @param maxTimeout     - provide maximum wait time in seconds for driver
+	 */
+
+	public void mouseActionMoveToElement(WebDriver driver, WebElement element, int maxTimeout) {
+		try {
+			if
+//The below method is defined above
+			(waitForElementToBeClickableBool(driver, element, maxTimeout)) {
+				builder.moveToElement(element).perform();
+
+			} else {
+				System.out.println("Not able to locate the element !");
+			}
+		} catch (Exception Ex) {
+			System.out.println("Exception occured");
+		}
+		
 	}
 	
 
@@ -171,11 +204,7 @@ public class TestClass {
 			if
 //The below method is defined above
 			(waitForElementToBeClickableBool(driver, element, maxTimeout)) {
-				//WebElement element = driver.findElement(attributeValue);
-				// element.click();
-				Actions builder = new Actions(driver);
 				builder.moveToElement(element).click().build().perform();
-				System.out.println("Able to locate and click to element !");
 
 			} else {
 				System.out.println("Not able to locate the element !");
@@ -210,8 +239,6 @@ public class TestClass {
 			System.out.println("Exception while selecting a value from dropdown" + ex.getMessage());
 		}
 	}
-	
-	
 	
 	/*Select a value in dropdown by Value*/
 	
