@@ -16,56 +16,80 @@ public class TestClass {
 	public WebDriverWait wait;
 	public JavascriptExecutor js;
 	public Actions builder;
-	
-	
-	//Constructor
-    public TestClass(WebDriver driver) {
-        this.driver = driver;
-        this.builder = new Actions(driver);
-        this.js = (JavascriptExecutor) this.driver;
-        wait = new WebDriverWait(driver, 10);
-    }
 
-	/*Method to clear textbox*/
-	public void clearText(WebElement element) {  
+	// Constructor
+	public TestClass(WebDriver driver) {
+		this.driver = driver;
+		this.builder = new Actions(driver);
+		this.js = (JavascriptExecutor) this.driver;
+		wait = new WebDriverWait(driver, 10);
+	}
+
+	/**
+	 * Method to clear textbox
+	 * 
+	 * @param element - provide locator value of element.
+	 */
+	public void clearText(WebElement element) {
 		try {
 			element.clear();
 		} catch (Exception e) {
 		}
-        
- } 
-	
-	/*Enter text into text box*/
-	public void enterText(WebElement element,String text) {  
+
+	}
+
+	/**
+	 * Method to enter text into text box
+	 * 
+	 * @param element - provide locator value of element.
+	 * @param text    - provide the text which want to be entered.
+	 */
+
+	public void enterText(WebElement element, String text) {
 		try {
 			element.sendKeys(text);
 		} catch (Exception e) {
 			System.out.println("Exception occured while entering text");
 		}
-        
- } 
 
-	/*Method to click on element*/
+	}
+
+	/**
+	 * Method to click on element
+	 * 
+	 * @param element - provide locator value of element.
+	 */
 	public void clickElement(WebElement element) {
 		try {
 			element.click();
 		} catch (Exception e) {
 			System.out.println("Exception occured while performing click operation");
 		}
-        
- }
-	
-	/*Method to to check element displayed or not*/
-	 public boolean isElementDisplayed(WebElement element, By by) {
-		 try {
-			 driver.findElement(by);
-			
+
+	}
+
+	/**
+	 * Method to to check element displayed or not by using function that take
+	 * argument of By class
+	 * 
+	 * @param driver Method return True/False If element present return==> True If
+	 *               element not present ===> return False
+	 */
+	public boolean isElementDisplayed(WebElement element, By by) {
+		try {
+			driver.findElement(by);
+
 		} catch (Exception e) {
 		}
-         return element.isDisplayed();
-     }
-	
-	/* Finding elements by using function that take argument of By class */
+		return element.isDisplayed();
+	}
+
+	/**
+	 * Method to Finding elements by using function that take argument of By class
+	 * 
+	 * @param driver Method return True/False If present return==> True If element
+	 *               not present ===> return False
+	 */
 
 	public boolean isElementPresent(WebDriver driver, By by) {
 		try {
@@ -75,46 +99,42 @@ public class TestClass {
 			return false;
 		}
 	}
-	
-	/*Method to select option from dropdown without select class*/
-	
-	public void selectOptionFromDropdown(WebElement element, String valueToSelect) {
-		List<WebElement> allOptions = element.findElements(By.tagName("li"));
-		for (WebElement option : allOptions) {
-			  // System.out.println("Option value "+option.getText());
-			        if (valueToSelect.equals(option.getText())) {
-			            option.click();
-			            break;
-			        }
-			    }
-	}
-	
-	
-	/*Method to select single selectable checkbox option*/
-	
-	public void selectOptionFromCheckbox(WebElement element, String valueToSelect) {
-		List<WebElement> allOptions = element.findElements(By.tagName("input"));
-		for (WebElement option : allOptions) {
-			  // System.out.println("Option value "+option.getText());
-			        if (valueToSelect.equals(option.getText())) {
-			            option.click();
-			            break;
-			        }
-			    }
-	}
-	
-	
-	
 
-	/*
+	/**
+	 * Wait for the element to be visible ignoring the
+	 * StaleElementReferenceException
+	 * 
+	 * @param driver
+	 * @param locator  - provide locator value of element till it is visible on
+	 *                 application and then click that element.
+	 * @param waitTime - provide maximum wait time in seconds for driver
+	 */
+	public boolean waitForElementToBeVisible(WebDriver driver, WebElement element, int waitTime) {
+		boolean flag = false;
+		try {
+			new WebDriverWait(driver, waitTime).ignoring(StaleElementReferenceException.class)
+					.until(ExpectedConditions.visibilityOfElementLocated((By) element));
+			flag = true;
+			return flag;
+		} catch (Exception e) {
+			return flag;
+		}
+	}
+
+	/**
 	 * Wait for the element to be clickable ignoring the
 	 * StaleElementReferenceException
+	 * 
+	 * @param driver
+	 * @param element  - provide locator value of element till it is visible on
+	 *                 application and then click that element.
+	 * @param waitTime - provide maximum wait time in seconds for driver
 	 */
 	public boolean waitForElementToBeClickableBool(WebDriver driver, WebElement element, int waitTime) {
 		boolean flag = false;
 		try {
 			new WebDriverWait(driver, waitTime).ignoring(StaleElementReferenceException.class)
-					.until(ExpectedConditions.elementToBeClickable((By)element));
+					.until(ExpectedConditions.elementToBeClickable(element));
 			flag = true;
 			return flag;
 
@@ -123,7 +143,50 @@ public class TestClass {
 		}
 	}
 
-	/* Wait for the Alert present ignoring the StaleElementReferenceException */
+	/**
+	 * Method to select option from dropdown without select class
+	 * 
+	 * @param driver
+	 * @param element       - provide locator value of element.
+	 * @param valueToSelect - provide the option value to be selected
+	 */
+
+	public void selectOptionFromDropdown(WebElement element, String valueToSelect) {
+		List<WebElement> allOptions = element.findElements(By.tagName("li"));
+		for (WebElement option : allOptions) {
+			// System.out.println("Option value "+option.getText());
+			if (valueToSelect.equals(option.getText())) {
+				option.click();
+				break;
+			}
+		}
+	}
+
+	/**
+	 * Method to select single selectable checkbox option
+	 * 
+	 * @param driver
+	 * @param element       - provide locator value of element.
+	 * @param valueToSelect - provide the option value to be selected
+	 */
+
+	public void selectOptionFromCheckbox(WebElement element, String valueToSelect) {
+		List<WebElement> allOptions = element.findElements(By.tagName("input"));
+		for (WebElement option : allOptions) {
+			// System.out.println("Option value "+option.getText());
+			if (valueToSelect.equals(option.getText())) {
+				option.click();
+				break;
+			}
+		}
+	}
+
+	/**
+	 * Wait for the Alert present ignoring the StaleElementReferenceException
+	 * 
+	 * @param driver
+	 * @param waitTime - provide maximum wait time in seconds for driver
+	 */
 
 	public boolean waitForAlertPresent(WebDriver driver, int waitTime) {
 		boolean flag = false;
@@ -137,39 +200,13 @@ public class TestClass {
 		}
 	}
 
-	/*
-	 * Wait for the element to be visible ignoring the
-	 * StaleElementReferenceException
-	 */
 	/**
-	 * This method is used to wait for element till visibility of element.
+	 * This method is used to Move to Element using Actions class
 	 * 
 	 * @param driver
-	 * @param locator - provide locator value of element till it is visible
-	 *                       on application and then click that element.
-	 * @param waitTime       - provide maximum wait time in seconds for driver
-	 */
-	public boolean waitForElementToBeVisible(WebDriver driver, WebElement locator, int waitTime) {
-		boolean flag = false;
-		try {
-			new WebDriverWait(driver, waitTime).ignoring(StaleElementReferenceException.class)
-					.until(ExpectedConditions.visibilityOfElementLocated((By) locator));
-			flag = true;
-			return flag;
-		} catch (Exception Ex) {
-			return flag;
-		}
-	}
-	
-	
-	/* Move to Element  Action in Selenium */
-	/**
-	 * This method is used to Move to Element and perform Click Action.
-	 * 
-	 * @param driver
-	 * @param attributeValue - provide locator value of element till it is visible
-	 *                       on application and then click that element.
-	 * @param maxTimeout     - provide maximum wait time in seconds for driver
+	 * @param element    - provide locator value of element till it is visible on
+	 *                   application and then click that element.
+	 * @param maxTimeout - provide maximum wait time in seconds for driver
 	 */
 
 	public void mouseActionMoveToElement(WebDriver driver, WebElement element, int maxTimeout) {
@@ -182,21 +219,19 @@ public class TestClass {
 			} else {
 				System.out.println("Not able to locate the element !");
 			}
-		} catch (Exception Ex) {
+		} catch (Exception e) {
 			System.out.println("Exception occured");
 		}
-		
-	}
-	
 
-	/* Move to Element and Click Action in Selenium */
+	}
+
 	/**
 	 * This method is used to Move to Element and perform Click Action.
 	 * 
 	 * @param driver
-	 * @param attributeValue - provide locator value of element till it is visible
-	 *                       on application and then click that element.
-	 * @param maxTimeout     - provide maximum wait time in seconds for driver
+	 * @param element    - provide locator value of element till it is visible on
+	 *                   application and then click that element.
+	 * @param maxTimeout - provide maximum wait time in seconds for driver
 	 */
 
 	public void mouseClickActionMoveToElement(WebDriver driver, WebElement element, int maxTimeout) {
@@ -207,89 +242,68 @@ public class TestClass {
 				builder.moveToElement(element).click().build().perform();
 
 			} else {
+
 				System.out.println("Not able to locate the element !");
 			}
-		} catch (Exception Ex) {
+		} catch (Exception e) {
 			System.out.println("Exception occured");
 		}
-		
+
 	}
-	
-	
-	/*Select a value in dropdown by Text*/
+
 	/**
-	 * This method is for simple dropdown selection by visibleText
+	 * This method is for simple dropdown selection by visibleText using select
+	 * class
 	 * 
 	 * @param driver
-	 * @param dropDownID-This
-	 *            is the unique attribute to find an dropdownelement
-	 * @param dropDownValue-This
-	 *            is the text to search in dropdown
+	 * @param element-provide    locator value of dropdown element
+	 * @param dropDownValue-This is the text to search in dropdown
 	 */
-	public static void dropDownSelectionByText(WebDriver driver, By dropDownID, String dropDownValue) {
+	public static void dropDownSelectionByText(WebDriver driver, WebElement element, String dropDownValue) {
 		try {
-			WebElement element = null;
 			new WebDriverWait(driver, 5).ignoring(StaleElementReferenceException.class)
-					.until(ExpectedConditions.elementToBeClickable(dropDownID));
-			element = driver.findElement(dropDownID);
-			Select dropDown = new Select(element);
-			dropDown.selectByVisibleText(dropDownValue);
-		}
-		catch (StaleElementReferenceException ex) {
+					.until(ExpectedConditions.elementToBeClickable(element));
+			Select select = new Select(element);
+			select.selectByVisibleText(dropDownValue);
+		} catch (StaleElementReferenceException ex) {
 			System.out.println("Exception while selecting a value from dropdown" + ex.getMessage());
 		}
 	}
-	
-	/*Select a value in dropdown by Value*/
-	
+
 	/**
-	 * This method is for simple dropdown selection by value
+	 * This method is for simple dropdown selection by value using select class
 	 * 
 	 * @param driver
-	 * @param dropDownID-This
-	 *            is the unique attribute to find an dropdownelement
-	 * @param dropDownValue-This
-	 *            is the text to search in dropdown
+	 * @param element-provide    locator value of dropdown element
+	 * @param dropDownValue-This is the text to search in dropdown
 	 */
-	public static void dropDownSelectionByValue(WebDriver driver, By dropDownID, String dropDownValue) {
+	public static void dropDownSelectionByValue(WebDriver driver, WebElement element, String dropDownValue) {
 		try {
-			WebElement element = null;
 			new WebDriverWait(driver, 5).ignoring(StaleElementReferenceException.class)
-					.until(ExpectedConditions.elementToBeClickable(dropDownID));
-			element = driver.findElement(dropDownID);
-			Select dropDown = new Select(element);
-			dropDown.selectByValue(dropDownValue);
-		}
-		catch (StaleElementReferenceException ex) {
+					.until(ExpectedConditions.elementToBeClickable(element));
+			Select select = new Select(element);
+			select.selectByValue(dropDownValue);
+		} catch (StaleElementReferenceException ex) {
 			System.out.println("Exception while selecting a value from dropdown" + ex.getMessage());
 		}
 	}
-	
-	
-	/*Select a value in dropdown by Index*/
-	
+
 	/**
-	 * This method is for simple dropdown selection by index
+	 * This method is for simple dropdown selection by index using select class
 	 * 
 	 * @param driver
-	 * @param dropDownID-This
-	 *            is the unique attribute to find an dropdownelement
-	 * @param dropDownValue-This
-	 *            is the text to search in dropdown
+	 * @param element-provide    locator value of dropdown element
+	 * @param dropDownValue-This is the text to search in dropdown
 	 */
-	public static void dropDownSelectionByIndex(WebDriver driver, By dropDownID, int dropDownValue) {
+	public static void dropDownSelectionByIndex(WebDriver driver, WebElement element, int dropDownValue) {
 		try {
-			WebElement element = null;
 			new WebDriverWait(driver, 5).ignoring(StaleElementReferenceException.class)
-					.until(ExpectedConditions.elementToBeClickable(dropDownID));
-			element = driver.findElement(dropDownID);
-			Select dropDown = new Select(element);
-			dropDown.selectByIndex(dropDownValue);
-		}
-		catch (StaleElementReferenceException ex) {
+					.until(ExpectedConditions.elementToBeClickable(element));
+			Select select = new Select(element);
+			select.selectByIndex(dropDownValue);
+		} catch (StaleElementReferenceException ex) {
 			System.out.println("Exception while selecting a value from dropdown" + ex.getMessage());
 		}
 	}
-	
 
 }

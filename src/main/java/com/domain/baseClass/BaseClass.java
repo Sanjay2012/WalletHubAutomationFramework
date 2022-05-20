@@ -7,11 +7,11 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.xml.DOMConfigurator;
-import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -23,30 +23,32 @@ import com.domain.utilityClass.Utility;
 
 public class BaseClass {
 	public WebDriver driver;
-	
+
 	public WebDriver getDriver() {
-        return driver;
-    }
+		return driver;
+	}
 
 	@Parameters("browser")
 	@BeforeClass
 	public void setupApplication(String browser) throws InterruptedException {
-		
+
 		BasicConfigurator.configure();
 		// configure log4j xml file
 		DOMConfigurator.configure("./src/main/resources/log4j2.xml");
-		
+
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "//drivers/chromedriver.exe");
 			ChromeOptions options=new ChromeOptions();
-			options.addArguments("--headless");
+			options.setAcceptInsecureCerts(true);
 			driver = new ChromeDriver(options);
 			Log.info("Chrome Browser Session Started");
 		}
 
 		else if (browser.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "//drivers/geckodriver.exe");
+			FirefoxOptions options=new FirefoxOptions();
+			options.setAcceptInsecureCerts(false);
 			driver = new FirefoxDriver();
 			Log.info("Firefox Browser Session Started");
 		}
@@ -70,9 +72,9 @@ public class BaseClass {
 		}
 
 	}
-	
-	public static String getDateTime() {  
-	     String currentDate = new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Date());  
-	     return currentDate;  
-	 }  
+
+	public static String getDateTime() {
+		String currentDate = new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Date());
+		return currentDate;
+	}
 }

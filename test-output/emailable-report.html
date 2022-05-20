@@ -9,14 +9,43 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">170,109</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">6</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">156,358</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.project.testSuite.FacebookPostTest</td><td><a href="#m0">FacebookLogin</a></td><td rowspan="1">1653004843791</td><td rowspan="1">30412</td></tr><tr class="passedeven"><td><a href="#m1">FacebookPost</a></td><td rowspan="1">1653004874225</td><td rowspan="1">14793</td></tr><tr class="passedodd"><td rowspan="6">com.project.testSuite.WalletHubTest</td><td><a href="#m2">confirmReview</a></td><td rowspan="1">1653004971690</td><td rowspan="1">30555</td></tr><tr class="passedodd"><td><a href="#m3">reviewWriting</a></td><td rowspan="1">1653004947990</td><td rowspan="1">23695</td></tr><tr class="passedodd"><td><a href="#m4">validateUserProfilePage</a></td><td rowspan="1">1653005005416</td><td rowspan="1">377</td></tr><tr class="passedodd"><td><a href="#m5">verifyReviewAndClickOnStars</a></td><td rowspan="1">1653004918222</td><td rowspan="1">29757</td></tr><tr class="passedodd"><td><a href="#m6">verifyReviewPosted</a></td><td rowspan="1">1653005002251</td><td rowspan="1">3160</td></tr><tr class="passedodd"><td><a href="#m7">walletHubLogin</a></td><td rowspan="1">1653004891241</td><td rowspan="1">26971</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.project.testSuite.FacebookPostTest</td><td><a href="#m0">FacebookLogin</a></td><td rowspan="1">1653055598004</td><td rowspan="1">32559</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.project.testSuite.FacebookPostTest</td><td><a href="#m1">FacebookPost</a></td><td rowspan="1">1653055634888</td><td rowspan="1">1</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">com.project.testSuite.WalletHubTest</td><td><a href="#m2">confirmReview</a></td><td rowspan="1">1653055698545</td><td rowspan="1">38423</td></tr><tr class="passedeven"><td><a href="#m3">reviewWriting</a></td><td rowspan="1">1653055692314</td><td rowspan="1">6225</td></tr><tr class="passedeven"><td><a href="#m4">validateUserProfilePage</a></td><td rowspan="1">1653055743425</td><td rowspan="1">359</td></tr><tr class="passedeven"><td><a href="#m5">verifyReviewAndClickOnStars</a></td><td rowspan="1">1653055660183</td><td rowspan="1">32127</td></tr><tr class="passedeven"><td><a href="#m6">verifyReviewPosted</a></td><td rowspan="1">1653055736974</td><td rowspan="1">6444</td></tr><tr class="passedeven"><td><a href="#m7">walletHubLogin</a></td><td rowspan="1">1653055638598</td><td rowspan="1">21577</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.project.testSuite.FacebookPostTest#FacebookLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.project.testSuite.FacebookPostTest#FacebookPost</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.project.testSuite.FacebookPostTest#FacebookLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
+  (Session info: chrome=101.0.4951.67)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-FI8UJG3&apos;, ip: &apos;172.16.36.118&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53123}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ab809db68ff14db007e371b3560d5634
+*** Element info: {Using=xpath, value=//*[text()=&apos;Log In&apos; and @name=&apos;login&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:4215)
+	at java.base/java.lang.StringBuilder.append(StringBuilder.java:169)
+	at com.facebook.pageObject.FacebookLoginPage.facebookLogin(FacebookLoginPage.java:39)
+	at com.project.testSuite.FacebookPostTest.FacebookLogin(FacebookPostTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.project.testSuite.FacebookPostTest#FacebookPost</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.project.testSuite.FacebookPostTest.FacebookPost() on instance com.project.testSuite.FacebookPostTest@437da279 depends on not successfully finished methods 
+[com.project.testSuite.FacebookPostTest.FacebookLogin() on instance com.project.testSuite.FacebookPostTest@437da279]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">com.project.testSuite.WalletHubTest#confirmReview</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.project.testSuite.WalletHubTest#reviewWriting</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Move to dropdown elementProxy element for: DefaultElementLocator 'By.xpath: //div[@class="dropdown second"]' and perform click operation<br/>Choose Health Insurancefrom dropdown<br/>Random string generated</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.project.testSuite.WalletHubTest#reviewWriting</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Move to dropdown element[[ChromeDriver: chrome on WINDOWS (6ead96d7b557bebbd03d00ce09e20f06)] -> xpath: //span[normalize-space()='Select...']] and perform click operation<br/>Choose Health Insurancefrom dropdown<br/>Random string generated</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m4">com.project.testSuite.WalletHubTest#validateUserProfilePage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m5">com.project.testSuite.WalletHubTest#verifyReviewAndClickOnStars</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m6">com.project.testSuite.WalletHubTest#verifyReviewPosted</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>

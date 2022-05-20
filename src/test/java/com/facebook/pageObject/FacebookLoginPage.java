@@ -26,7 +26,7 @@ public class FacebookLoginPage extends TestClass{
 
 	/*Method to login facebook- Login page
 	 * */
-	public void facebookLogin(String emailAddress, String password) {	
+	public void facebookLogin(String emailAddress, String password) {
 		clearText(emailField); 
 		Log.info("Clearing the text box"+ emailField);
 		enterText(emailField, emailAddress);

@@ -1,5 +1,6 @@
 package com.facebook.pageObject;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,7 +10,7 @@ import com.domain.utilityClass.Log;
 
 public class FacebookHomePage extends TestClass {
 	// declaration
-	@FindBy(xpath = "//a[@href=\"/me/\" and @role='link']")
+	@FindBy(xpath = "//a[@class='oajrlxb2 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys qt6c0cv9 i1ao9s8h esuyzwwr f1sip0of abiwlrkh p8dawk7l lzcic4wl bp9cbjyn e72ty7fz qlfml3jp inkptoze qmr60zad j83agx80 btwxx1t3 tv7at329 taijpn5t d1544ag0 tw6a2znq l9j0dhe7 k4urcfbm g5ia77u1']")
 	private WebElement profile;
 
 	@FindBy(xpath = "//*[@class=\"m9osqain a5q79mjw gy2v8mqq jm1wdb64 k4urcfbm qv66sw1b\"]")
@@ -26,13 +27,9 @@ public class FacebookHomePage extends TestClass {
 		PageFactory.initElements(driver, this);
 	}
 	
-	
 	public String verifyProfileName() {
-		String profileName = profile.getText();
-		return profileName;
-
+		return profile.findElement(By.xpath("//span[@class=\"a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ltmttdrg g0qnabr5\"]")).getText();
 	}
-
 	public void postStatus(String message) {
 		clickElement(profile);
 		Log.info("Click on element"+ profile);

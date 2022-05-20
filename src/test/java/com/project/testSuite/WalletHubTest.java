@@ -98,11 +98,11 @@ public class WalletHubTest extends BaseClass {
 	public void validateUserProfilePage() {
 		Log.startTestCase("validateUserProfilePage");
 		userPagePo = new WallethubUserProfilePage(driver);
-		System.out.println(userPagePo.getElementText());
-		soft.assertEquals(userPagePo.getElementText(), "Sanjay Waware");
+		String userName = userPagePo.getUserName();
+		soft.assertEquals(userName,"Sanjay Waware");
 		Log.info("Verified user name on profile page");
-		System.out.println(userPagePo.recommendText());
-		soft.assertTrue(driver.getPageSource().contains("I RECOMMEND"), "Expected text found");
+		String recommendTxt=userPagePo.recommendText();
+		soft.assertEquals(recommendTxt,"Sanjay Waware's Recommendations");
 		Log.info("Verified review posted shows under profile");
 		Log.endTestCase("validateUserProfilePage");
 	}

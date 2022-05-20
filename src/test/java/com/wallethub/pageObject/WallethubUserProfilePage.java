@@ -13,8 +13,8 @@ public class WallethubUserProfilePage extends TestClass {
 	@FindBy(xpath = "//*[@class=\"profile-name\"]")
 	private WebElement profileName;
 	
-	@FindBy(xpath = "//*[@class=\"pr-rec-subtitle\"]")
-	private WebElement recommendText;
+	@FindBy(xpath = "//*[@class=\"pr-rec-title\"]")
+	private WebElement recommendTxt;
 
 
 	public WallethubUserProfilePage(WebDriver driver) {
@@ -24,15 +24,15 @@ public class WallethubUserProfilePage extends TestClass {
 	}
 
 	/*Method to get element text*/
-	public String getElementText() {
-		waitForElementToBeVisible(driver, profileName, 10);
+	public String getUserName() {
+		waitForElementToBeVisible(driver, profileName, 20);
 		return profileName.getText();
         
     }
 	
 	public String recommendText() {
-		waitForElementToBeVisible(driver, recommendText, 10);
-		return recommendText.getText();
+		waitForElementToBeVisible(driver, recommendTxt, 20);
+		return recommendTxt.getText();
 		
 	}
 }

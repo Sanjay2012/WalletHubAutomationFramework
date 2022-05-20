@@ -13,7 +13,7 @@ import com.domain.utilityClass.Log;
 public class WallethubReviewPage extends TestClass {
 	// webElement declaration
 
-	@FindBy(xpath="//div[@class=\"dropdown second\"]")
+	@FindBy(xpath="//span[normalize-space()='Select...']")
 	private WebElement dropdown;
 	
 	@FindBy(xpath="(//ul[@role='listbox' and @class='dropdown-list ng-enter-element'])[4]")
