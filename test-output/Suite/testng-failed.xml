@@ -4,15 +4,19 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.project.testSuite.FacebookPostTest">
+      <class name="com.project.testSuite.WalletHubTest">
         <methods>
-          <include name="FacebookPost"/>
+          <include name="verifyReviewAndClickOnStars"/>
+          <include name="walletHubLogin"/>
           <include name="takeScreenShotOnFailure"/>
           <include name="setupApplication"/>
-          <include name="FacebookLogin"/>
+          <include name="validateUserProfilePage"/>
+          <include name="verifyReviewPosted"/>
           <include name="closeApplication"/>
+          <include name="reviewWriting"/>
+          <include name="confirmReview"/>
         </methods>
-      </class> <!-- com.project.testSuite.FacebookPostTest -->
+      </class> <!-- com.project.testSuite.WalletHubTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

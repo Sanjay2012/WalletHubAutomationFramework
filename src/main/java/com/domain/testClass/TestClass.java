@@ -67,22 +67,7 @@ public class TestClass {
 		}
 
 	}
-
-	/**
-	 * Method to to check element displayed or not by using function that take
-	 * argument of By class
-	 * 
-	 * @param driver Method return True/False If element present return==> True If
-	 *               element not present ===> return False
-	 */
-	public boolean isElementDisplayed(WebElement element, By by) {
-		try {
-			driver.findElement(by);
-
-		} catch (Exception e) {
-		}
-		return element.isDisplayed();
-	}
+	
 
 	/**
 	 * Method to Finding elements by using function that take argument of By class
@@ -138,7 +123,7 @@ public class TestClass {
 			flag = true;
 			return flag;
 
-		} catch (Exception Ex) {
+		} catch (Exception e) {
 			return flag;
 		}
 	}

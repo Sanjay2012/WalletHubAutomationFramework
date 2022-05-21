@@ -23,7 +23,6 @@ import com.domain.utilityClass.Utility;
 
 public class BaseClass {
 	public WebDriver driver;
-
 	public WebDriver getDriver() {
 		return driver;
 	}
@@ -41,6 +40,9 @@ public class BaseClass {
 					System.getProperty("user.dir") + "//drivers/chromedriver.exe");
 			ChromeOptions options=new ChromeOptions();
 			options.setAcceptInsecureCerts(true);
+			//options.addArguments("--headless");
+			//options.addArguments("--disable-gpu");
+			//options.addArguments("--no-sandbox");
 			driver = new ChromeDriver(options);
 			Log.info("Chrome Browser Session Started");
 		}
@@ -49,11 +51,12 @@ public class BaseClass {
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "//drivers/geckodriver.exe");
 			FirefoxOptions options=new FirefoxOptions();
 			options.setAcceptInsecureCerts(false);
-			driver = new FirefoxDriver();
+			//options.addArguments("--headless");
+			driver = new FirefoxDriver(options);
 			Log.info("Firefox Browser Session Started");
 		}
+		
 		driver.manage().window().maximize();
-		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
 

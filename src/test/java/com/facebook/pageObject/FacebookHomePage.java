@@ -1,6 +1,5 @@
 package com.facebook.pageObject;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,7 +9,7 @@ import com.domain.utilityClass.Log;
 
 public class FacebookHomePage extends TestClass {
 	// declaration
-	@FindBy(xpath = "//a[@class='oajrlxb2 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys qt6c0cv9 i1ao9s8h esuyzwwr f1sip0of abiwlrkh p8dawk7l lzcic4wl bp9cbjyn e72ty7fz qlfml3jp inkptoze qmr60zad j83agx80 btwxx1t3 tv7at329 taijpn5t d1544ag0 tw6a2znq l9j0dhe7 k4urcfbm g5ia77u1']")
+	@FindBy(xpath = "//div[@class=\"rq0escxv l9j0dhe7 du4w35lb j83agx80 cbu4d94t qowsmv63 dp1hu0rb\"]//div[@class=\"ow4ym5g4 auili1gw rq0escxv j83agx80 buofh1pr g5gj957u i1fnvgqd oygrvhab cxmmr5t8 hcukyx3x kvgmc6g5 hpfvmrgz qt6c0cv9 jb3vyjys l9j0dhe7 du4w35lb bp9cbjyn btwxx1t3 dflh9lhu scb9dxdr nnctdnn4\"]//span[@class=\"a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7\"]")
 	private WebElement profile;
 
 	@FindBy(xpath = "//*[@class=\"m9osqain a5q79mjw gy2v8mqq jm1wdb64 k4urcfbm qv66sw1b\"]")
@@ -21,18 +20,48 @@ public class FacebookHomePage extends TestClass {
 
 	@FindBy(xpath = "//*[@class=\"k4urcfbm discj3wi dati1w0a hv4rvrfc i1fnvgqd j83agx80 rq0escxv bp9cbjyn\"]")
 	private WebElement postButton;
-
+	
+	@FindBy(xpath = "//span[contains(text(), 'Create post')]")
+	private WebElement createPostTitle;
+	
+	@FindBy(xpath="//div[@class=\"l9j0dhe7 du4w35lb cjfnh4rs j83agx80 cbu4d94t lzcic4wl ni8dbmo4 stjgntxs oqq733wu cwj9ozl2 io0zqebd m5lcvass fbipl8qg nwvqtn77 nwpbqux9 iy3k6uwz e9a99x49 g8p4j16d bv25afu3 d2edcug0\"]")
+	private WebElement postDialog;
+	
+	
 	public FacebookHomePage(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this);
 	}
 	
 	public String verifyProfileName() {
-		return profile.findElement(By.xpath("//span[@class=\"a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ltmttdrg g0qnabr5\"]")).getText();
+		try {
+			waitForElementToBeVisible(driver, profile, 10);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return profile.getText();
+				
 	}
+	
+	
+	public boolean elementDisplayed() {
+		try {
+			waitForElementToBeVisible(driver, postDialog, 10);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return postDialog.isDisplayed();
+	}
+	
+	
+
 	public void postStatus(String message) {
+		waitForElementToBeClickableBool(driver, profile, 10);
 		clickElement(profile);
 		Log.info("Click on element"+ profile);
+		waitForElementToBeClickableBool(driver, statusTxt, 10);
 		clickElement(statusTxt);
 		Log.info("Click on element"+ statusTxt);
 		enterText(statusBox, message);

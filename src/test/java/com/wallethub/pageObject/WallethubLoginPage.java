@@ -49,4 +49,5 @@ public class WallethubLoginPage extends TestClass {
 		Log.info("Click on element"+ cntButton);
 	}
 	
+	
 }

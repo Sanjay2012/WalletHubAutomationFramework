@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,35 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 1 failed,  1 skipped,  6 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.project.testSuite.FacebookPostTest" class="method navigator-link" hash-for-method="FacebookLogin">FacebookLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.project.testSuite.FacebookPostTest" class="method navigator-link" hash-for-method="FacebookPost">FacebookPost</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -130,6 +102,16 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.project.testSuite.FacebookPostTest" class="method navigator-link" hash-for-method="FacebookLogin">FacebookLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.project.testSuite.FacebookPostTest" class="method navigator-link" hash-for-method="FacebookPost">FacebookPost</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.project.testSuite.WalletHubTest" class="method navigator-link" hash-for-method="confirmReview">confirmReview</a> <!-- method navigator-link -->
@@ -172,9 +154,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.project.testSuite.FacebookPostTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -183,58 +165,17 @@
                   <a name="FacebookLogin">
                   </a> <!-- FacebookLogin -->
                   <span class="method-name">FacebookLogin</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
-  (Session info: chrome=101.0.4951.67)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-FI8UJG3&apos;, ip: &apos;172.16.36.118&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53123}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ab809db68ff14db007e371b3560d5634
-*** Element info: {Using=xpath, value=//*[text()=&apos;Log In&apos; and @name=&apos;login&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy28.toString(Unknown Source)
-	at java.base/java.lang.String.valueOf(String.java:4215)
-	at java.base/java.lang.StringBuilder.append(StringBuilder.java:169)
-	at com.facebook.pageObject.FacebookLoginPage.facebookLogin(FacebookLoginPage.java:39)
-	at com.project.testSuite.FacebookPostTest.FacebookLogin(FacebookPostTest.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">com.project.testSuite.FacebookPostTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="FacebookPost">
                   </a> <!-- FacebookPost -->
                   <span class="method-name">FacebookPost</span>
-                  <div class="stack-trace">java.lang.Throwable: Method com.project.testSuite.FacebookPostTest.FacebookPost() on instance com.project.testSuite.FacebookPostTest@437da279 depends on not successfully finished methods 
-[com.project.testSuite.FacebookPostTest.FacebookLogin() on instance com.project.testSuite.FacebookPostTest@437da279]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -343,40 +284,40 @@ data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'confirmReview')
 data.setCell(0, 2, 'com.project.testSuite.WalletHubTest')
-data.setCell(0, 3, 38423);
+data.setCell(0, 3, 34979);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'FacebookLogin')
-data.setCell(1, 2, 'com.project.testSuite.FacebookPostTest')
-data.setCell(1, 3, 32559);
+data.setCell(1, 1, 'walletHubLogin')
+data.setCell(1, 2, 'com.project.testSuite.WalletHubTest')
+data.setCell(1, 3, 15177);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyReviewAndClickOnStars')
-data.setCell(2, 2, 'com.project.testSuite.WalletHubTest')
-data.setCell(2, 3, 32127);
+data.setCell(2, 1, 'FacebookPost')
+data.setCell(2, 2, 'com.project.testSuite.FacebookPostTest')
+data.setCell(2, 3, 14498);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'walletHubLogin')
-data.setCell(3, 2, 'com.project.testSuite.WalletHubTest')
-data.setCell(3, 3, 21577);
+data.setCell(3, 1, 'FacebookLogin')
+data.setCell(3, 2, 'com.project.testSuite.FacebookPostTest')
+data.setCell(3, 3, 12906);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyReviewPosted')
+data.setCell(4, 1, 'verifyReviewAndClickOnStars')
 data.setCell(4, 2, 'com.project.testSuite.WalletHubTest')
-data.setCell(4, 3, 6444);
+data.setCell(4, 3, 11652);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'reviewWriting')
 data.setCell(5, 2, 'com.project.testSuite.WalletHubTest')
-data.setCell(5, 3, 6225);
+data.setCell(5, 3, 7316);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'validateUserProfilePage')
+data.setCell(6, 1, 'verifyReviewPosted')
 data.setCell(6, 2, 'com.project.testSuite.WalletHubTest')
-data.setCell(6, 3, 359);
+data.setCell(6, 3, 4928);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'FacebookPost')
-data.setCell(7, 2, 'com.project.testSuite.FacebookPostTest')
-data.setCell(7, 3, 1);
+data.setCell(7, 1, 'validateUserProfilePage')
+data.setCell(7, 2, 'com.project.testSuite.WalletHubTest')
+data.setCell(7, 3, 202);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -390,7 +331,7 @@ return data;
             <div class="reporter-method-div">
               <span class="reporter-method-name">reviewWriting</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Move to dropdown element[[ChromeDriver: chrome on WINDOWS (6ead96d7b557bebbd03d00ce09e20f06)] -> xpath: //span[normalize-space()='Select...']] and perform click operation</span>
+                <span class="reporter-method-output">Move to dropdown element[[ChromeDriver: chrome on WINDOWS (60776bf6a0487af68783681ea0a89b6c)] -> xpath: //span[normalize-space()='Select...']] and perform click operation</span>
                 <span class="reporter-method-output">Choose Health Insurancefrom dropdown</span>
                 <span class="reporter-method-output">Random string generated</span>
               </div> <!-- reporter-method-output-div -->
@@ -416,81 +357,83 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">FacebookLogin</span>
-                <span class="method-start">9158 ms</span>
+                <span class="method-start">13568 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">takeScreenShotOnFailure([TestResult name=FacebookLogin status=FAILURE method=FacebookPostTest.FacebookLogin()[pri:0, instanc...)</span>
-                <span class="method-start">41734 ms</span>
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=FacebookLogin status=SUCCESS method=FacebookPostTest.FacebookLogin()[pri:0, instanc...)</span>
+                <span class="method-start">26481 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">FacebookPost</span>
-                <span class="method-start">46042 ms</span>
+                <span class="method-start">26493 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">takeScreenShotOnFailure([TestResult name=FacebookPost status=SUCCESS method=FacebookPostTest.FacebookPost()[pri:0, instance:...)</span>
+                <span class="method-start">40996 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">46052 ms</span>
+                <span class="method-start">40998 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.project.testSuite.WalletHubTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setupApplication(chrome)</span>
-                <span class="method-start">47350 ms</span>
+                <span class="method-start">43150 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">walletHubLogin</span>
-                <span class="method-start">49752 ms</span>
+                <span class="method-start">46364 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=walletHubLogin status=SUCCESS method=WalletHubTest.walletHubLogin()[pri:0, instance...)</span>
-                <span class="method-start">71334 ms</span>
+                <span class="method-start">61548 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyReviewAndClickOnStars</span>
-                <span class="method-start">71337 ms</span>
+                <span class="method-start">61551 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyReviewAndClickOnStars status=SUCCESS method=WalletHubTest.verifyReviewAndClic...)</span>
-                <span class="method-start">103466 ms</span>
+                <span class="method-start">73207 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">reviewWriting</span>
-                <span class="method-start">103468 ms</span>
+                <span class="method-start">73209 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=reviewWriting status=SUCCESS method=WalletHubTest.reviewWriting()[pri:0, instance:c...)</span>
-                <span class="method-start">109697 ms</span>
+                <span class="method-start">80528 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">confirmReview</span>
-                <span class="method-start">109699 ms</span>
+                <span class="method-start">80530 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=confirmReview status=SUCCESS method=WalletHubTest.confirmReview()[pri:0, instance:c...)</span>
-                <span class="method-start">148126 ms</span>
+                <span class="method-start">115511 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyReviewPosted</span>
-                <span class="method-start">148128 ms</span>
+                <span class="method-start">115514 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=verifyReviewPosted status=SUCCESS method=WalletHubTest.verifyReviewPosted()[pri:0, ...)</span>
-                <span class="method-start">154577 ms</span>
+                <span class="method-start">120444 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">validateUserProfilePage</span>
-                <span class="method-start">154579 ms</span>
+                <span class="method-start">120446 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">takeScreenShotOnFailure([TestResult name=validateUserProfilePage status=SUCCESS method=WalletHubTest.validateUserProfilePage...)</span>
-                <span class="method-start">154940 ms</span>
+                <span class="method-start">120650 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">154941 ms</span>
+                <span class="method-start">120651 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -13,7 +13,10 @@ import com.domain.utilityClass.Log;
 public class WalletTestInsurancePage extends TestClass {
 	
 	// webElement declaration
-	@FindBy(xpath = "//div[@class=\"rv review-action ng-enter-element\"]//div[@class=\"rating-box-wrapper\"]")
+	@FindBy(xpath="//h1[@class=\"profile-name\"]")
+	private WebElement profileName;
+	
+	@FindBy(xpath ="//div[@class=\"rv review-action ng-enter-element\"]//div[@class=\"rating-box-wrapper\"]")
 	private WebElement ratingBox;
 
 	@FindBy(xpath = "//div[@class=\"rv review-action ng-enter-element\"]//div[@class=\"rating-box-wrapper\"]//*[@class=\"rvs-star-svg\"]")
@@ -44,6 +47,7 @@ public class WalletTestInsurancePage extends TestClass {
 		super(driver);
 		PageFactory.initElements(driver, this);
 	}
+	
 
 	/*
 	 * Method to check review posted or not. If review exist then remove it before
@@ -64,6 +68,7 @@ public class WalletTestInsurancePage extends TestClass {
 		}
 
 	}
+	
 
 	/* method, to scroll down page and Hover over review stars */
 

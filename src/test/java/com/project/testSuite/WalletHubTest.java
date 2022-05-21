@@ -31,11 +31,14 @@ public class WalletHubTest extends BaseClass {
 		driver.get("https://wallethub.com/join/login");
 		Log.info("Application opened" + driver.getCurrentUrl());
 		/* login */
+		soft.assertEquals(driver.getCurrentUrl(), "https://wallethub.com/join/login");
+		Log.info("Verifying the current url");
 		soft.assertTrue(driver.getPageSource().contains("WalletHub Login"));
 		Log.info("Verifying the page title is " + driver.getTitle());
 		loginPo.wallethubLogin(Utility.getTestData(1, 4), Utility.getTestData(2, 4));
 		Log.info("WalletHub login sucessful");
 		Log.endTestCase("walletHubLogin");
+		soft.assertAll();
 
 	}
 
@@ -45,7 +48,6 @@ public class WalletHubTest extends BaseClass {
 		Log.startTestCase("verifyReviewAndClickOnStars");
 		driver.get("https://wallethub.com/profile/13732055i");
 		Log.info("Application opened" + driver.getCurrentUrl());
-
 		// hover over reviews stars
 		insurancePo = new WalletTestInsurancePage(driver);
 		soft.assertTrue(driver.getPageSource().contains("test insurance company metatitle test"));
@@ -55,6 +57,7 @@ public class WalletHubTest extends BaseClass {
 		insurancePo.hoverStarAndClick("4");
 		Log.info("Hover over review stars and click on 4th star");
 		Log.endTestCase("verifyReviewAndClickOnStars");
+		soft.assertAll();
 
 	}
 
@@ -69,17 +72,19 @@ public class WalletHubTest extends BaseClass {
 		reviewPo.writeRiview();
 		Log.info("Writing review");
 		Log.endTestCase("reviewWriting");
+		soft.assertAll();
 	}
 
 	@Test(dependsOnMethods = "reviewWriting")
 	public void confirmReview() {
 		Log.startTestCase("confirmReview");
 		confirmReviewPo = new WallethubConfirmReviewPage(driver);
-		soft.assertTrue(driver.getPageSource().contains("Your review has been posted."));
+		soft.assertEquals(confirmReviewPo.postSuccessText(), "Your review has been posted.");
 		Log.info("Verifying the page contents");
 		confirmReviewPo.confirmPost();
 		Log.info("Confirming the review");
 		Log.endTestCase("confirmReview");
+		soft.assertAll();
 	}
 
 	@Test(dependsOnMethods = "confirmReview")
@@ -91,6 +96,7 @@ public class WalletHubTest extends BaseClass {
 		insurancePo.clickMenuOption("Profile");
 		Log.info("Click on Profile option and page navigate to user profile");
 		Log.endTestCase("verifyReviewPosted");
+		soft.assertAll();
 		
 	}
 	
@@ -105,7 +111,7 @@ public class WalletHubTest extends BaseClass {
 		soft.assertEquals(recommendTxt,"Sanjay Waware's Recommendations");
 		Log.info("Verified review posted shows under profile");
 		Log.endTestCase("validateUserProfilePage");
+		soft.assertAll();
 	}
-	
 	
 }

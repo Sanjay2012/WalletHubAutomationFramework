@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="6" failed="1" skipped="1">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Move to dropdown element[[ChromeDriver: chrome on WINDOWS (6ead96d7b557bebbd03d00ce09e20f06)] -> xpath: //span[normalize-space()='Select...']] and perform click operation]]>
+      <![CDATA[Move to dropdown element[[ChromeDriver: chrome on WINDOWS (60776bf6a0487af68783681ea0a89b6c)] -> xpath: //span[normalize-space()='Select...']] and perform click operation]]>
     </line>
     <line>
       <![CDATA[Choose Health Insurancefrom dropdown]]>
@@ -11,12 +11,12 @@
       <![CDATA[Random string generated]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-05-20T19:36:28 IST" name="Suite" finished-at="2022-05-20T19:39:05 IST" duration-ms="156358">
+  <suite started-at="2022-05-21T10:32:30 IST" name="Suite" finished-at="2022-05-21T10:34:31 IST" duration-ms="121698">
     <groups>
     </groups>
-    <test started-at="2022-05-20T19:36:28 IST" name="Test" finished-at="2022-05-20T19:39:05 IST" duration-ms="156358">
+    <test started-at="2022-05-21T10:32:30 IST" name="Test" finished-at="2022-05-21T10:34:31 IST" duration-ms="121698">
       <class name="com.project.testSuite.WalletHubTest">
-        <test-method is-config="true" signature="setupApplication(java.lang.String)[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf]" started-at="2022-05-20T19:37:16 IST" name="setupApplication" finished-at="2022-05-20T19:37:18 IST" duration-ms="2400" status="PASS">
+        <test-method is-config="true" signature="setupApplication(java.lang.String)[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d]" started-at="2022-05-21T10:33:13 IST" name="setupApplication" finished-at="2022-05-21T10:33:16 IST" duration-ms="3213" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,40 +27,40 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method signature="walletHubLogin()[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf]" started-at="2022-05-20T19:37:18 IST" name="walletHubLogin" finished-at="2022-05-20T19:37:40 IST" duration-ms="21577" status="PASS">
+        <test-method signature="walletHubLogin()[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d]" started-at="2022-05-21T10:33:16 IST" name="walletHubLogin" finished-at="2022-05-21T10:33:31 IST" duration-ms="15177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- walletHubLogin -->
-        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf]" started-at="2022-05-20T19:37:40 IST" name="takeScreenShotOnFailure" finished-at="2022-05-20T19:37:40 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d]" started-at="2022-05-21T10:33:31 IST" name="takeScreenShotOnFailure" finished-at="2022-05-21T10:33:31 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=walletHubLogin status=SUCCESS method=WalletHubTest.walletHubLogin()[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf] output={null}]]]>
+                <![CDATA[[TestResult name=walletHubLogin status=SUCCESS method=WalletHubTest.walletHubLogin()[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method signature="verifyReviewAndClickOnStars()[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf]" started-at="2022-05-20T19:37:40 IST" name="verifyReviewAndClickOnStars" finished-at="2022-05-20T19:38:12 IST" depends-on-methods="com.project.testSuite.WalletHubTest.walletHubLogin" duration-ms="32127" status="PASS">
+        <test-method signature="verifyReviewAndClickOnStars()[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d]" started-at="2022-05-21T10:33:31 IST" name="verifyReviewAndClickOnStars" finished-at="2022-05-21T10:33:43 IST" depends-on-methods="com.project.testSuite.WalletHubTest.walletHubLogin" duration-ms="11652" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyReviewAndClickOnStars -->
-        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf]" started-at="2022-05-20T19:38:12 IST" name="takeScreenShotOnFailure" finished-at="2022-05-20T19:38:12 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d]" started-at="2022-05-21T10:33:43 IST" name="takeScreenShotOnFailure" finished-at="2022-05-21T10:33:43 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyReviewAndClickOnStars status=SUCCESS method=WalletHubTest.verifyReviewAndClickOnStars()[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf] output={null}]]]>
+                <![CDATA[[TestResult name=verifyReviewAndClickOnStars status=SUCCESS method=WalletHubTest.verifyReviewAndClickOnStars()[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method signature="reviewWriting()[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf]" started-at="2022-05-20T19:38:12 IST" name="reviewWriting" finished-at="2022-05-20T19:38:18 IST" depends-on-methods="com.project.testSuite.WalletHubTest.verifyReviewAndClickOnStars" duration-ms="6225" status="PASS">
+        <test-method signature="reviewWriting()[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d]" started-at="2022-05-21T10:33:43 IST" name="reviewWriting" finished-at="2022-05-21T10:33:50 IST" depends-on-methods="com.project.testSuite.WalletHubTest.verifyReviewAndClickOnStars" duration-ms="7316" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Move to dropdown element[[ChromeDriver: chrome on WINDOWS (6ead96d7b557bebbd03d00ce09e20f06)] -> xpath: //span[normalize-space()='Select...']] and perform click operation]]>
+              <![CDATA[Move to dropdown element[[ChromeDriver: chrome on WINDOWS (60776bf6a0487af68783681ea0a89b6c)] -> xpath: //span[normalize-space()='Select...']] and perform click operation]]>
             </line>
             <line>
               <![CDATA[Choose Health Insurancefrom dropdown]]>
@@ -70,69 +70,69 @@
             </line>
           </reporter-output>
         </test-method> <!-- reviewWriting -->
-        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf]" started-at="2022-05-20T19:38:18 IST" name="takeScreenShotOnFailure" finished-at="2022-05-20T19:38:18 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d]" started-at="2022-05-21T10:33:50 IST" name="takeScreenShotOnFailure" finished-at="2022-05-21T10:33:50 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=reviewWriting status=SUCCESS method=WalletHubTest.reviewWriting()[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf] output=Move to dropdown element[[ChromeDriver: chrome on WINDOWS (6ead96d7b557bebbd03d00ce09e20f06)] -> xpath: //span[normalize-space()='Select...']] and perform click operation]]]>
+                <![CDATA[[TestResult name=reviewWriting status=SUCCESS method=WalletHubTest.reviewWriting()[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d] output=Move to dropdown element[[ChromeDriver: chrome on WINDOWS (60776bf6a0487af68783681ea0a89b6c)] -> xpath: //span[normalize-space()='Select...']] and perform click operation]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method signature="confirmReview()[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf]" started-at="2022-05-20T19:38:18 IST" name="confirmReview" finished-at="2022-05-20T19:38:56 IST" depends-on-methods="com.project.testSuite.WalletHubTest.reviewWriting" duration-ms="38423" status="PASS">
+        <test-method signature="confirmReview()[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d]" started-at="2022-05-21T10:33:50 IST" name="confirmReview" finished-at="2022-05-21T10:34:25 IST" depends-on-methods="com.project.testSuite.WalletHubTest.reviewWriting" duration-ms="34979" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confirmReview -->
-        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf]" started-at="2022-05-20T19:38:56 IST" name="takeScreenShotOnFailure" finished-at="2022-05-20T19:38:56 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d]" started-at="2022-05-21T10:34:25 IST" name="takeScreenShotOnFailure" finished-at="2022-05-21T10:34:25 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=confirmReview status=SUCCESS method=WalletHubTest.confirmReview()[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf] output={null}]]]>
+                <![CDATA[[TestResult name=confirmReview status=SUCCESS method=WalletHubTest.confirmReview()[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method signature="verifyReviewPosted()[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf]" started-at="2022-05-20T19:38:56 IST" name="verifyReviewPosted" finished-at="2022-05-20T19:39:03 IST" depends-on-methods="com.project.testSuite.WalletHubTest.confirmReview" duration-ms="6444" status="PASS">
+        <test-method signature="verifyReviewPosted()[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d]" started-at="2022-05-21T10:34:25 IST" name="verifyReviewPosted" finished-at="2022-05-21T10:34:30 IST" depends-on-methods="com.project.testSuite.WalletHubTest.confirmReview" duration-ms="4928" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyReviewPosted -->
-        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf]" started-at="2022-05-20T19:39:03 IST" name="takeScreenShotOnFailure" finished-at="2022-05-20T19:39:03 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d]" started-at="2022-05-21T10:34:30 IST" name="takeScreenShotOnFailure" finished-at="2022-05-21T10:34:30 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyReviewPosted status=SUCCESS method=WalletHubTest.verifyReviewPosted()[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf] output={null}]]]>
+                <![CDATA[[TestResult name=verifyReviewPosted status=SUCCESS method=WalletHubTest.verifyReviewPosted()[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method signature="validateUserProfilePage()[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf]" started-at="2022-05-20T19:39:03 IST" name="validateUserProfilePage" finished-at="2022-05-20T19:39:03 IST" depends-on-methods="com.project.testSuite.WalletHubTest.verifyReviewPosted" duration-ms="359" status="PASS">
+        <test-method signature="validateUserProfilePage()[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d]" started-at="2022-05-21T10:34:30 IST" name="validateUserProfilePage" finished-at="2022-05-21T10:34:30 IST" depends-on-methods="com.project.testSuite.WalletHubTest.verifyReviewPosted" duration-ms="202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUserProfilePage -->
-        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf]" started-at="2022-05-20T19:39:03 IST" name="takeScreenShotOnFailure" finished-at="2022-05-20T19:39:03 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d]" started-at="2022-05-21T10:34:30 IST" name="takeScreenShotOnFailure" finished-at="2022-05-21T10:34:30 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateUserProfilePage status=SUCCESS method=WalletHubTest.validateUserProfilePage()[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf] output={null}]]]>
+                <![CDATA[[TestResult name=validateUserProfilePage status=SUCCESS method=WalletHubTest.validateUserProfilePage()[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.project.testSuite.WalletHubTest@71a8adcf]" started-at="2022-05-20T19:39:03 IST" name="closeApplication" finished-at="2022-05-20T19:39:05 IST" duration-ms="1355" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.project.testSuite.WalletHubTest@70e9c95d]" started-at="2022-05-21T10:34:30 IST" name="closeApplication" finished-at="2022-05-21T10:34:31 IST" duration-ms="967" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- com.project.testSuite.WalletHubTest -->
       <class name="com.project.testSuite.FacebookPostTest">
-        <test-method is-config="true" signature="setupApplication(java.lang.String)[pri:0, instance:com.project.testSuite.FacebookPostTest@437da279]" started-at="2022-05-20T19:36:28 IST" name="setupApplication" finished-at="2022-05-20T19:36:37 IST" duration-ms="9121" status="PASS">
+        <test-method is-config="true" signature="setupApplication(java.lang.String)[pri:0, instance:com.project.testSuite.FacebookPostTest@534a5a98]" started-at="2022-05-21T10:32:30 IST" name="setupApplication" finished-at="2022-05-21T10:32:43 IST" duration-ms="13537" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -143,129 +143,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method signature="FacebookLogin()[pri:0, instance:com.project.testSuite.FacebookPostTest@437da279]" started-at="2022-05-20T19:36:38 IST" name="FacebookLogin" finished-at="2022-05-20T19:37:10 IST" duration-ms="32559" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 20.000
-  (Session info: chrome=101.0.4951.67)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-FI8UJG3', ip: '172.16.36.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53123}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ab809db68ff14db007e371b3560d5634
-*** Element info: {Using=xpath, value=//*[text()='Log In' and @name='login']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 20.000
-  (Session info: chrome=101.0.4951.67)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-FI8UJG3', ip: '172.16.36.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:53123}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ab809db68ff14db007e371b3560d5634
-*** Element info: {Using=xpath, value=//*[text()='Log In' and @name='login']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy28.toString(Unknown Source)
-at java.base/java.lang.String.valueOf(String.java:4215)
-at java.base/java.lang.StringBuilder.append(StringBuilder.java:169)
-at com.facebook.pageObject.FacebookLoginPage.facebookLogin(FacebookLoginPage.java:39)
-at com.project.testSuite.FacebookPostTest.FacebookLogin(FacebookPostTest.java:26)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="FacebookLogin()[pri:0, instance:com.project.testSuite.FacebookPostTest@534a5a98]" started-at="2022-05-21T10:32:43 IST" name="FacebookLogin" finished-at="2022-05-21T10:32:56 IST" duration-ms="12906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FacebookLogin -->
-        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.FacebookPostTest@437da279]" started-at="2022-05-20T19:37:10 IST" name="takeScreenShotOnFailure" finished-at="2022-05-20T19:37:14 IST" duration-ms="4298" status="PASS">
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.FacebookPostTest@534a5a98]" started-at="2022-05-21T10:32:56 IST" name="takeScreenShotOnFailure" finished-at="2022-05-21T10:32:56 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=FacebookLogin status=FAILURE method=FacebookPostTest.FacebookLogin()[pri:0, instance:com.project.testSuite.FacebookPostTest@437da279] output={null}]]]>
+                <![CDATA[[TestResult name=FacebookLogin status=SUCCESS method=FacebookPostTest.FacebookLogin()[pri:0, instance:com.project.testSuite.FacebookPostTest@534a5a98] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method signature="FacebookPost()[pri:0, instance:com.project.testSuite.FacebookPostTest@437da279]" started-at="2022-05-20T19:37:14 IST" name="FacebookPost" finished-at="2022-05-20T19:37:14 IST" depends-on-methods="com.project.testSuite.FacebookPostTest.FacebookLogin" duration-ms="1" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.project.testSuite.FacebookPostTest.FacebookPost() on instance com.project.testSuite.FacebookPostTest@437da279 depends on not successfully finished methods 
-[com.project.testSuite.FacebookPostTest.FacebookLogin() on instance com.project.testSuite.FacebookPostTest@437da279]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.project.testSuite.FacebookPostTest.FacebookPost() on instance com.project.testSuite.FacebookPostTest@437da279 depends on not successfully finished methods 
-[com.project.testSuite.FacebookPostTest.FacebookLogin() on instance com.project.testSuite.FacebookPostTest@437da279]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="FacebookPost()[pri:0, instance:com.project.testSuite.FacebookPostTest@534a5a98]" started-at="2022-05-21T10:32:56 IST" name="FacebookPost" finished-at="2022-05-21T10:33:11 IST" depends-on-methods="com.project.testSuite.FacebookPostTest.FacebookLogin" duration-ms="14498" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FacebookPost -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.project.testSuite.FacebookPostTest@437da279]" started-at="2022-05-20T19:37:14 IST" name="closeApplication" finished-at="2022-05-20T19:37:16 IST" duration-ms="1297" status="PASS">
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.FacebookPostTest@534a5a98]" started-at="2022-05-21T10:33:11 IST" name="takeScreenShotOnFailure" finished-at="2022-05-21T10:33:11 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FacebookPost status=SUCCESS method=FacebookPostTest.FacebookPost()[pri:0, instance:com.project.testSuite.FacebookPostTest@534a5a98] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.project.testSuite.FacebookPostTest@534a5a98]" started-at="2022-05-21T10:33:11 IST" name="closeApplication" finished-at="2022-05-21T10:33:13 IST" duration-ms="2151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->

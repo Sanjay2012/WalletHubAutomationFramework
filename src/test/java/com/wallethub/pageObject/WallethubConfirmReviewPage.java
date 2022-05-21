@@ -23,6 +23,15 @@ public class WallethubConfirmReviewPage extends TestClass {
 		PageFactory.initElements(driver, this);
 
 	}
+	
+	
+	/*Method to validate post success message*/
+	
+	public String postSuccessText() {
+		waitForElementToBeVisible(driver, postMessage, 10);
+		return postMessage.getText();
+		
+	}
 
 	/*Method to post the review*/
 	
