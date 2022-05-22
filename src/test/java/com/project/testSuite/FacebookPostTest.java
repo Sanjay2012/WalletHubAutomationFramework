@@ -23,7 +23,6 @@ public class FacebookPostTest extends BaseClass {
 		driver.get(prop.getProperty("facebookUrl"));
 		Log.info("Application opened" + driver.getCurrentUrl());
 		soft.assertTrue(driver.getPageSource().contains("log in or sign up"));
-		// loginPo.facebookLogin(Utility.getTestData(1, 1), Utility.getTestData(2, 1));
 		loginPo.facebookLogin(prop.getProperty("username"), prop.getProperty("password"));
 		Log.endTestCase("FacebookLogin");
 		soft.assertAll();
@@ -33,10 +32,9 @@ public class FacebookPostTest extends BaseClass {
 	public void FacebookPost() throws EncryptedDocumentException, IOException {
 		Log.startTestCase("FacebookPost");
 		homePo = new FacebookHomePage(driver);
-		soft.assertEquals(homePo.verifyProfileName(), "Shiv Kumar");
+		soft.assertEquals(homePo.verifyProfileName(), prop.getProperty("profileName"));
 		Log.info("Verifying profile name");
 		soft.assertTrue(true, "Dialog displayed");
-		// homePo.postStatus(Utility.getTestData(3, 1));
 		homePo.postStatus(prop.getProperty("message"));
 		Log.info("Facebook Post sucessfully");
 		Log.endTestCase("FacebookPost");
