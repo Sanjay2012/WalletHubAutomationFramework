@@ -1,24 +1,38 @@
-package com.domain.testClass;
+package com.domain.utilityClass;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.List;
+
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class TestClass {
+import com.domain.baseClass.BaseClass;
+
+public class BaseTestClass {
 	public WebDriver driver;
 	public WebDriverWait wait;
 	public JavascriptExecutor js;
 	public Actions builder;
+	static Sheet sh;
 
 	// Constructor
-	public TestClass(WebDriver driver) {
+	public BaseTestClass(WebDriver driver) {
 		this.driver = driver;
 		this.builder = new Actions(driver);
 		this.js = (JavascriptExecutor) this.driver;
@@ -66,23 +80,6 @@ public class TestClass {
 			System.out.println("Exception occured while performing click operation");
 		}
 
-	}
-	
-
-	/**
-	 * Method to Finding elements by using function that take argument of By class
-	 * 
-	 * @param driver Method return True/False If present return==> True If element
-	 *               not present ===> return False
-	 */
-
-	public boolean isElementPresent(WebDriver driver, By by) {
-		try {
-			driver.findElement(by);
-			return true;
-		} catch (Exception e) {
-			return false;
-		}
 	}
 
 	/**
@@ -288,6 +285,52 @@ public class TestClass {
 			select.selectByIndex(dropDownValue);
 		} catch (StaleElementReferenceException ex) {
 			System.out.println("Exception while selecting a value from dropdown" + ex.getMessage());
+		}
+	}
+
+	/**
+	 * This method is for accessing external data from excel file
+	 * 
+	 * @param rowIndex   -- provide the row index by seeing the excel sheet for
+	 *                   particular data
+	 * @param colIndex-- provide the row index by seeing the excel sheet for
+	 *                   particular data
+	 */
+
+	public static String getTestData(int rowIndex, int colIndex) throws EncryptedDocumentException, IOException {
+		FileInputStream file = new FileInputStream(System.getProperty("user.dir") + "//testData/testdata1.xlsx");
+		try {
+			sh = WorkbookFactory.create(file).getSheet("TestData");
+		} catch (EncryptedDocumentException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		String value = sh.getRow(rowIndex).getCell(colIndex).getStringCellValue();
+		return value;
+	}
+
+	/**
+	 * This method is for capture the screenshots once any method get failed
+	 * 
+	 * @param driver
+	 * @param testName -- name of failed method
+	 */
+
+	public static void captureScreenshot(WebDriver driver, String testName) throws IOException {
+		try {
+			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			File destFile = new File("./Screenshots/" + testName + "_" + BaseClass.getDateTime() + ".png");
+			FileHandler.copy(scrFile, destFile);
+		} catch (WebDriverException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 

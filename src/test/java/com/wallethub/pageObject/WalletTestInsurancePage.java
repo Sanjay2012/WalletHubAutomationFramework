@@ -1,22 +1,21 @@
 package com.wallethub.pageObject;
 
 import java.util.List;
-
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import com.domain.testClass.TestClass;
+import com.domain.utilityClass.BaseTestClass;
 import com.domain.utilityClass.Log;
 
-public class WalletTestInsurancePage extends TestClass {
-	
+public class WalletTestInsurancePage extends BaseTestClass {
+
 	// webElement declaration
-	@FindBy(xpath="//h1[@class=\"profile-name\"]")
+	@FindBy(xpath = "//h1[@class=\"profile-name\"]")
 	private WebElement profileName;
-	
-	@FindBy(xpath ="//div[@class=\"rv review-action ng-enter-element\"]//div[@class=\"rating-box-wrapper\"]")
+
+	@FindBy(xpath = "//div[@class=\"rv review-action ng-enter-element\"]//div[@class=\"rating-box-wrapper\"]")
 	private WebElement ratingBox;
 
 	@FindBy(xpath = "//div[@class=\"rv review-action ng-enter-element\"]//div[@class=\"rating-box-wrapper\"]//*[@class=\"rvs-star-svg\"]")
@@ -47,7 +46,6 @@ public class WalletTestInsurancePage extends TestClass {
 		super(driver);
 		PageFactory.initElements(driver, this);
 	}
-	
 
 	/*
 	 * Method to check review posted or not. If review exist then remove it before
@@ -68,7 +66,6 @@ public class WalletTestInsurancePage extends TestClass {
 		}
 
 	}
-	
 
 	/* method, to scroll down page and Hover over review stars */
 
@@ -78,7 +75,7 @@ public class WalletTestInsurancePage extends TestClass {
 
 		// loop through each stars and hover over it
 		for (WebElement ele : stars) {
-			builder.moveToElement(ele).perform();
+			mouseActionMoveToElement(driver, ele, 10);
 			if (ele.getAttribute("aria-label").contains(valueToSelect)) {
 				ele.click();
 			}
@@ -94,13 +91,13 @@ public class WalletTestInsurancePage extends TestClass {
 		builder.sendKeys(Keys.PAGE_UP).build().perform();
 		mouseActionMoveToElement(driver, profileMenu, 10);
 		for (WebElement ele : menuOptions) {
-			if(optionToSelect.equals(ele.getText())) {
+			if (optionToSelect.equals(ele.getText())) {
 				ele.click();
 				break;
 			}
-			
+
 		}
-		
+
 	}
 
 }

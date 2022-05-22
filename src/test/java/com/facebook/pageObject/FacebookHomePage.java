@@ -4,10 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import com.domain.testClass.TestClass;
+
+import com.domain.utilityClass.BaseTestClass;
 import com.domain.utilityClass.Log;
 
-public class FacebookHomePage extends TestClass {
+public class FacebookHomePage extends BaseTestClass {
 	// declaration
 	@FindBy(xpath = "//div[@class=\"rq0escxv l9j0dhe7 du4w35lb j83agx80 cbu4d94t qowsmv63 dp1hu0rb\"]//div[@class=\"ow4ym5g4 auili1gw rq0escxv j83agx80 buofh1pr g5gj957u i1fnvgqd oygrvhab cxmmr5t8 hcukyx3x kvgmc6g5 hpfvmrgz qt6c0cv9 jb3vyjys l9j0dhe7 du4w35lb bp9cbjyn btwxx1t3 dflh9lhu scb9dxdr nnctdnn4\"]//span[@class=\"a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7\"]")
 	private WebElement profile;
@@ -20,19 +21,18 @@ public class FacebookHomePage extends TestClass {
 
 	@FindBy(xpath = "//*[@class=\"k4urcfbm discj3wi dati1w0a hv4rvrfc i1fnvgqd j83agx80 rq0escxv bp9cbjyn\"]")
 	private WebElement postButton;
-	
+
 	@FindBy(xpath = "//span[contains(text(), 'Create post')]")
 	private WebElement createPostTitle;
-	
-	@FindBy(xpath="//div[@class=\"l9j0dhe7 du4w35lb cjfnh4rs j83agx80 cbu4d94t lzcic4wl ni8dbmo4 stjgntxs oqq733wu cwj9ozl2 io0zqebd m5lcvass fbipl8qg nwvqtn77 nwpbqux9 iy3k6uwz e9a99x49 g8p4j16d bv25afu3 d2edcug0\"]")
+
+	@FindBy(xpath = "//div[@class=\"l9j0dhe7 du4w35lb cjfnh4rs j83agx80 cbu4d94t lzcic4wl ni8dbmo4 stjgntxs oqq733wu cwj9ozl2 io0zqebd m5lcvass fbipl8qg nwvqtn77 nwpbqux9 iy3k6uwz e9a99x49 g8p4j16d bv25afu3 d2edcug0\"]")
 	private WebElement postDialog;
-	
-	
+
 	public FacebookHomePage(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	public String verifyProfileName() {
 		try {
 			waitForElementToBeVisible(driver, profile, 10);
@@ -41,10 +41,9 @@ public class FacebookHomePage extends TestClass {
 			e.printStackTrace();
 		}
 		return profile.getText();
-				
+
 	}
-	
-	
+
 	public boolean elementDisplayed() {
 		try {
 			waitForElementToBeVisible(driver, postDialog, 10);
@@ -54,20 +53,18 @@ public class FacebookHomePage extends TestClass {
 		}
 		return postDialog.isDisplayed();
 	}
-	
-	
 
 	public void postStatus(String message) {
 		waitForElementToBeClickableBool(driver, profile, 10);
 		clickElement(profile);
-		Log.info("Click on element"+ profile);
+		Log.info("Click on element" + profile);
 		waitForElementToBeClickableBool(driver, statusTxt, 10);
 		clickElement(statusTxt);
-		Log.info("Click on element"+ statusTxt);
+		Log.info("Click on element" + statusTxt);
 		enterText(statusBox, message);
-		Log.info("Entering text into text box"+ statusBox);
+		Log.info("Entering text into text box" + statusBox);
 		clickElement(postButton);
-		Log.info("Click on element"+ postButton);
+		Log.info("Click on element" + postButton);
 
 	}
 }

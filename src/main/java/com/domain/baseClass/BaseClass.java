@@ -1,8 +1,11 @@
 package com.domain.baseClass;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.BasicConfigurator;
@@ -18,11 +21,13 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
+import com.domain.utilityClass.BaseTestClass;
 import com.domain.utilityClass.Log;
-import com.domain.utilityClass.Utility;
 
 public class BaseClass {
 	public WebDriver driver;
+	public Properties prop;
+
 	public WebDriver getDriver() {
 		return driver;
 	}
@@ -30,32 +35,31 @@ public class BaseClass {
 	@Parameters("browser")
 	@BeforeClass
 	public void setupApplication(String browser) throws InterruptedException {
-
+		readConfig();
 		BasicConfigurator.configure();
 		// configure log4j xml file
 		DOMConfigurator.configure("./src/main/resources/log4j2.xml");
+		// PropertyConfigurator.configure("log4j2.properties");
 
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "//drivers/chromedriver.exe");
-			ChromeOptions options=new ChromeOptions();
+			ChromeOptions options = new ChromeOptions();
 			options.setAcceptInsecureCerts(true);
-			//options.addArguments("--headless");
-			//options.addArguments("--disable-gpu");
-			//options.addArguments("--no-sandbox");
+			// options.addArguments("--headless");
 			driver = new ChromeDriver(options);
 			Log.info("Chrome Browser Session Started");
 		}
 
 		else if (browser.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "//drivers/geckodriver.exe");
-			FirefoxOptions options=new FirefoxOptions();
+			FirefoxOptions options = new FirefoxOptions();
 			options.setAcceptInsecureCerts(false);
-			//options.addArguments("--headless");
+			// options.addArguments("--headless");
 			driver = new FirefoxDriver(options);
 			Log.info("Firefox Browser Session Started");
 		}
-		
+
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	}
@@ -69,15 +73,29 @@ public class BaseClass {
 	@AfterMethod
 	public void takeScreenShotOnFailure(ITestResult testResult) throws IOException {
 		if (testResult.getStatus() == ITestResult.FAILURE) {
-			Utility.captureScreenshot(driver, testResult.getName());
+			BaseTestClass.captureScreenshot(driver, testResult.getName());
 			Log.info("The screenshot of failed test  " + testResult.getName() + " captured");
 
 		}
 
 	}
 
+
 	public static String getDateTime() {
 		String currentDate = new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Date());
 		return currentDate;
+	}
+
+	public void readConfig() {
+		try {
+			prop = new Properties();
+			FileInputStream file = new FileInputStream(
+					System.getProperty("user.dir") + "/config/Configuration.properties");
+			prop.load(file);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 }

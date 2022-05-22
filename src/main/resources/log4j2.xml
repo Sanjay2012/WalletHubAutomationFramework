@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="log4j2.dtd"?>
+<!DOCTYPE Configuration SYSTEM "log4j2.dtd">
 <Configuration status="warn">
 	<Appenders>
 		<Console name="Console" target="SYSTEM_OUT">
