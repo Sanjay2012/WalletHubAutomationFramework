@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="0" failed="0" skipped="8">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Move to dropdown element[[ChromeDriver: chrome on WINDOWS (c51cef88e9d8c63b4b67fe7e8f49d3ff)] -> xpath: //span[normalize-space()='Select...']] and perform click operation]]>
+    </line>
+    <line>
+      <![CDATA[Choose Health Insurancefrom dropdown]]>
+    </line>
+    <line>
+      <![CDATA[Random string generated]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-05-22T00:21:16 IST" name="Suite" finished-at="2022-05-22T00:21:16 IST" duration-ms="346">
+  <suite started-at="2022-05-22T20:42:30 IST" name="Suite" finished-at="2022-05-22T20:44:20 IST" duration-ms="109458">
     <groups>
     </groups>
-    <test started-at="2022-05-22T00:21:16 IST" name="Test" finished-at="2022-05-22T00:21:16 IST" duration-ms="346">
+    <test started-at="2022-05-22T20:42:30 IST" name="Test" finished-at="2022-05-22T20:44:20 IST" duration-ms="109458">
       <class name="com.project.testSuite.WalletHubTest">
-        <test-method is-config="true" signature="setupApplication(java.lang.String)[pri:0, instance:com.project.testSuite.WalletHubTest@69637b10]" started-at="2022-05-22T00:21:16 IST" name="setupApplication" finished-at="2022-05-22T00:21:16 IST" duration-ms="5" status="FAIL">
+        <test-method is-config="true" signature="setupApplication(java.lang.String)[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f]" started-at="2022-05-22T20:42:30 IST" name="setupApplication" finished-at="2022-05-22T20:42:36 IST" duration-ms="5737" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -15,419 +24,113 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.Error">
-            <message>
-              <![CDATA[Unresolved compilation problems: 
-BasicConfigurator cannot be resolved
-DOMConfigurator cannot be resolved
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Error: Unresolved compilation problems: 
-BasicConfigurator cannot be resolved
-DOMConfigurator cannot be resolved
-
-at com.domain.baseClass.BaseClass.setupApplication(BaseClass.java:39)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Error -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method signature="walletHubLogin()[pri:0, instance:com.project.testSuite.WalletHubTest@69637b10]" started-at="2022-05-22T00:21:16 IST" name="walletHubLogin" finished-at="2022-05-22T00:21:16 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Error">
-            <message>
-              <![CDATA[Unresolved compilation problems: 
-BasicConfigurator cannot be resolved
-DOMConfigurator cannot be resolved
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Error: Unresolved compilation problems: 
-BasicConfigurator cannot be resolved
-DOMConfigurator cannot be resolved
-
-at com.domain.baseClass.BaseClass.setupApplication(BaseClass.java:39)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Error -->
+        <test-method signature="walletHubLogin()[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f]" started-at="2022-05-22T20:42:36 IST" name="walletHubLogin" finished-at="2022-05-22T20:42:53 IST" duration-ms="17388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- walletHubLogin -->
-        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.WalletHubTest@69637b10]" started-at="2022-05-22T00:21:16 IST" name="takeScreenShotOnFailure" finished-at="2022-05-22T00:21:16 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f]" started-at="2022-05-22T20:42:53 IST" name="takeScreenShotOnFailure" finished-at="2022-05-22T20:42:53 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=walletHubLogin status=SUCCESS method=WalletHubTest.walletHubLogin()[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method signature="verifyReviewAndClickOnStars()[pri:0, instance:com.project.testSuite.WalletHubTest@69637b10]" started-at="2022-05-22T00:21:16 IST" name="verifyReviewAndClickOnStars" finished-at="2022-05-22T00:21:16 IST" depends-on-methods="com.project.testSuite.WalletHubTest.walletHubLogin" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.project.testSuite.WalletHubTest.verifyReviewAndClickOnStars() on instance com.project.testSuite.WalletHubTest@69637b10 depends on not successfully finished methods 
-[com.project.testSuite.WalletHubTest.walletHubLogin() on instance com.project.testSuite.WalletHubTest@69637b10]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.project.testSuite.WalletHubTest.verifyReviewAndClickOnStars() on instance com.project.testSuite.WalletHubTest@69637b10 depends on not successfully finished methods 
-[com.project.testSuite.WalletHubTest.walletHubLogin() on instance com.project.testSuite.WalletHubTest@69637b10]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="verifyReviewAndClickOnStars()[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f]" started-at="2022-05-22T20:42:53 IST" name="verifyReviewAndClickOnStars" finished-at="2022-05-22T20:43:33 IST" depends-on-methods="com.project.testSuite.WalletHubTest.walletHubLogin" duration-ms="39524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyReviewAndClickOnStars -->
-        <test-method signature="reviewWriting()[pri:0, instance:com.project.testSuite.WalletHubTest@69637b10]" started-at="2022-05-22T00:21:16 IST" name="reviewWriting" finished-at="2022-05-22T00:21:16 IST" depends-on-methods="com.project.testSuite.WalletHubTest.verifyReviewAndClickOnStars" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.project.testSuite.WalletHubTest.reviewWriting() on instance com.project.testSuite.WalletHubTest@69637b10 depends on not successfully finished methods 
-[com.project.testSuite.WalletHubTest.verifyReviewAndClickOnStars() on instance com.project.testSuite.WalletHubTest@69637b10]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.project.testSuite.WalletHubTest.reviewWriting() on instance com.project.testSuite.WalletHubTest@69637b10 depends on not successfully finished methods 
-[com.project.testSuite.WalletHubTest.verifyReviewAndClickOnStars() on instance com.project.testSuite.WalletHubTest@69637b10]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f]" started-at="2022-05-22T20:43:33 IST" name="takeScreenShotOnFailure" finished-at="2022-05-22T20:43:33 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyReviewAndClickOnStars status=SUCCESS method=WalletHubTest.verifyReviewAndClickOnStars()[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="reviewWriting()[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f]" started-at="2022-05-22T20:43:33 IST" name="reviewWriting" finished-at="2022-05-22T20:43:36 IST" depends-on-methods="com.project.testSuite.WalletHubTest.verifyReviewAndClickOnStars" duration-ms="3401" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Move to dropdown element[[ChromeDriver: chrome on WINDOWS (c51cef88e9d8c63b4b67fe7e8f49d3ff)] -> xpath: //span[normalize-space()='Select...']] and perform click operation]]>
+            </line>
+            <line>
+              <![CDATA[Choose Health Insurancefrom dropdown]]>
+            </line>
+            <line>
+              <![CDATA[Random string generated]]>
+            </line>
+          </reporter-output>
         </test-method> <!-- reviewWriting -->
-        <test-method signature="confirmReview()[pri:0, instance:com.project.testSuite.WalletHubTest@69637b10]" started-at="2022-05-22T00:21:16 IST" name="confirmReview" finished-at="2022-05-22T00:21:16 IST" depends-on-methods="com.project.testSuite.WalletHubTest.reviewWriting" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.project.testSuite.WalletHubTest.confirmReview() on instance com.project.testSuite.WalletHubTest@69637b10 depends on not successfully finished methods 
-[com.project.testSuite.WalletHubTest.reviewWriting() on instance com.project.testSuite.WalletHubTest@69637b10]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.project.testSuite.WalletHubTest.confirmReview() on instance com.project.testSuite.WalletHubTest@69637b10 depends on not successfully finished methods 
-[com.project.testSuite.WalletHubTest.reviewWriting() on instance com.project.testSuite.WalletHubTest@69637b10]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f]" started-at="2022-05-22T20:43:36 IST" name="takeScreenShotOnFailure" finished-at="2022-05-22T20:43:36 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=reviewWriting status=SUCCESS method=WalletHubTest.reviewWriting()[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f] output=Move to dropdown element[[ChromeDriver: chrome on WINDOWS (c51cef88e9d8c63b4b67fe7e8f49d3ff)] -> xpath: //span[normalize-space()='Select...']] and perform click operation]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="confirmReview()[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f]" started-at="2022-05-22T20:43:36 IST" name="confirmReview" finished-at="2022-05-22T20:44:11 IST" depends-on-methods="com.project.testSuite.WalletHubTest.reviewWriting" duration-ms="34394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- confirmReview -->
-        <test-method signature="verifyReviewPosted()[pri:0, instance:com.project.testSuite.WalletHubTest@69637b10]" started-at="2022-05-22T00:21:16 IST" name="verifyReviewPosted" finished-at="2022-05-22T00:21:16 IST" depends-on-methods="com.project.testSuite.WalletHubTest.confirmReview" duration-ms="1" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.project.testSuite.WalletHubTest.verifyReviewPosted() on instance com.project.testSuite.WalletHubTest@69637b10 depends on not successfully finished methods 
-[com.project.testSuite.WalletHubTest.confirmReview() on instance com.project.testSuite.WalletHubTest@69637b10]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.project.testSuite.WalletHubTest.verifyReviewPosted() on instance com.project.testSuite.WalletHubTest@69637b10 depends on not successfully finished methods 
-[com.project.testSuite.WalletHubTest.confirmReview() on instance com.project.testSuite.WalletHubTest@69637b10]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f]" started-at="2022-05-22T20:44:11 IST" name="takeScreenShotOnFailure" finished-at="2022-05-22T20:44:11 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=confirmReview status=SUCCESS method=WalletHubTest.confirmReview()[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="verifyReviewPosted()[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f]" started-at="2022-05-22T20:44:11 IST" name="verifyReviewPosted" finished-at="2022-05-22T20:44:19 IST" depends-on-methods="com.project.testSuite.WalletHubTest.confirmReview" duration-ms="8010" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyReviewPosted -->
-        <test-method signature="validateUserProfilePage()[pri:0, instance:com.project.testSuite.WalletHubTest@69637b10]" started-at="2022-05-22T00:21:16 IST" name="validateUserProfilePage" finished-at="2022-05-22T00:21:16 IST" depends-on-methods="com.project.testSuite.WalletHubTest.verifyReviewPosted" duration-ms="1" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.project.testSuite.WalletHubTest.validateUserProfilePage() on instance com.project.testSuite.WalletHubTest@69637b10 depends on not successfully finished methods 
-[com.project.testSuite.WalletHubTest.verifyReviewPosted() on instance com.project.testSuite.WalletHubTest@69637b10]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.project.testSuite.WalletHubTest.validateUserProfilePage() on instance com.project.testSuite.WalletHubTest@69637b10 depends on not successfully finished methods 
-[com.project.testSuite.WalletHubTest.verifyReviewPosted() on instance com.project.testSuite.WalletHubTest@69637b10]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f]" started-at="2022-05-22T20:44:19 IST" name="takeScreenShotOnFailure" finished-at="2022-05-22T20:44:19 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyReviewPosted status=SUCCESS method=WalletHubTest.verifyReviewPosted()[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method signature="validateUserProfilePage()[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f]" started-at="2022-05-22T20:44:19 IST" name="validateUserProfilePage" finished-at="2022-05-22T20:44:19 IST" depends-on-methods="com.project.testSuite.WalletHubTest.verifyReviewPosted" duration-ms="267" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUserProfilePage -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.project.testSuite.WalletHubTest@69637b10]" started-at="2022-05-22T00:21:16 IST" name="closeApplication" finished-at="2022-05-22T00:21:16 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f]" started-at="2022-05-22T20:44:19 IST" name="takeScreenShotOnFailure" finished-at="2022-05-22T20:44:19 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateUserProfilePage status=SUCCESS method=WalletHubTest.validateUserProfilePage()[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.project.testSuite.WalletHubTest@5778826f]" started-at="2022-05-22T20:44:19 IST" name="closeApplication" finished-at="2022-05-22T20:44:20 IST" duration-ms="614" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- com.project.testSuite.WalletHubTest -->
-      <class name="com.project.testSuite.FacebookPostTest">
-        <test-method is-config="true" signature="setupApplication(java.lang.String)[pri:0, instance:com.project.testSuite.FacebookPostTest@42a9e5d1]" started-at="2022-05-22T00:21:16 IST" name="setupApplication" finished-at="2022-05-22T00:21:16 IST" duration-ms="34" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.Error">
-            <message>
-              <![CDATA[Unresolved compilation problems: 
-BasicConfigurator cannot be resolved
-DOMConfigurator cannot be resolved
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Error: Unresolved compilation problems: 
-BasicConfigurator cannot be resolved
-DOMConfigurator cannot be resolved
-
-at com.domain.baseClass.BaseClass.setupApplication(BaseClass.java:39)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Error -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupApplication -->
-        <test-method signature="FacebookLogin()[pri:0, instance:com.project.testSuite.FacebookPostTest@42a9e5d1]" started-at="2022-05-22T00:21:16 IST" name="FacebookLogin" finished-at="2022-05-22T00:21:16 IST" duration-ms="1" status="SKIP">
-          <exception class="java.lang.Error">
-            <message>
-              <![CDATA[Unresolved compilation problems: 
-BasicConfigurator cannot be resolved
-DOMConfigurator cannot be resolved
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Error: Unresolved compilation problems: 
-BasicConfigurator cannot be resolved
-DOMConfigurator cannot be resolved
-
-at com.domain.baseClass.BaseClass.setupApplication(BaseClass.java:39)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Error -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FacebookLogin -->
-        <test-method is-config="true" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.project.testSuite.FacebookPostTest@42a9e5d1]" started-at="2022-05-22T00:21:16 IST" name="takeScreenShotOnFailure" finished-at="2022-05-22T00:21:16 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- takeScreenShotOnFailure -->
-        <test-method signature="FacebookPost()[pri:0, instance:com.project.testSuite.FacebookPostTest@42a9e5d1]" started-at="2022-05-22T00:21:16 IST" name="FacebookPost" finished-at="2022-05-22T00:21:16 IST" depends-on-methods="com.project.testSuite.FacebookPostTest.FacebookLogin" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method com.project.testSuite.FacebookPostTest.FacebookPost() on instance com.project.testSuite.FacebookPostTest@42a9e5d1 depends on not successfully finished methods 
-[com.project.testSuite.FacebookPostTest.FacebookLogin() on instance com.project.testSuite.FacebookPostTest@42a9e5d1]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method com.project.testSuite.FacebookPostTest.FacebookPost() on instance com.project.testSuite.FacebookPostTest@42a9e5d1 depends on not successfully finished methods 
-[com.project.testSuite.FacebookPostTest.FacebookLogin() on instance com.project.testSuite.FacebookPostTest@42a9e5d1]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FacebookPost -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:com.project.testSuite.FacebookPostTest@42a9e5d1]" started-at="2022-05-22T00:21:16 IST" name="closeApplication" finished-at="2022-05-22T00:21:16 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- com.project.testSuite.FacebookPostTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -28,7 +28,7 @@ public class WalletHubTest extends BaseClass {
 		Log.startTestCase("walletHubLogin");
 		loginPo = new WallethubLoginPage(driver);
 		driver.get(prop.getProperty("walletHubUrl"));
-		Log.info("Application opened" + driver.getCurrentUrl());
+		Log.info("Application opened "+ driver.getCurrentUrl());
 		/* login */
 		soft.assertEquals(driver.getCurrentUrl(), prop.getProperty("walletHubUrl"));
 		Log.info("Verifying the current url");
@@ -45,7 +45,7 @@ public class WalletHubTest extends BaseClass {
 	public void verifyReviewAndClickOnStars() throws InterruptedException {
 		Log.startTestCase("verifyReviewAndClickOnStars");
 		driver.get("https://wallethub.com/profile/13732055i");
-		Log.info("Application opened" + driver.getCurrentUrl());
+		Log.info("Application opened " + driver.getCurrentUrl());
 		// hover over reviews stars
 		insurancePo = new WalletTestInsurancePage(driver);
 		soft.assertTrue(driver.getPageSource().contains(prop.getProperty("insurancePageTitle")));

@@ -28,37 +28,38 @@ public class FacebookHomePage extends BaseTestClass {
 	@FindBy(xpath = "//div[@class=\"l9j0dhe7 du4w35lb cjfnh4rs j83agx80 cbu4d94t lzcic4wl ni8dbmo4 stjgntxs oqq733wu cwj9ozl2 io0zqebd m5lcvass fbipl8qg nwvqtn77 nwpbqux9 iy3k6uwz e9a99x49 g8p4j16d bv25afu3 d2edcug0\"]")
 	private WebElement postDialog;
 
+	
 	public FacebookHomePage(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this);
 	}
 
+	/*
+	 * Method to verify profile Name
+	 */
 	public String verifyProfileName() {
-		try {
-			waitForElementToBeVisible(driver, profile, 10);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		waitForElementToBeVisible(driver, profile, 10);
 		return profile.getText();
 
 	}
 
+	/*
+	 * Method to verify the element is present or not on webpage
+	 */
+
 	public boolean elementDisplayed() {
-		try {
-			waitForElementToBeVisible(driver, postDialog, 10);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		waitForElementToBeVisible(driver, postDialog, 10);
 		return postDialog.isDisplayed();
 	}
 
+	/*
+	 * Method to Post message after land on profile page
+	 */
+
 	public void postStatus(String message) {
-		waitForElementToBeClickableBool(driver, profile, 10);
+		waitForElementToBeVisible(driver, profile, 10);
 		clickElement(profile);
 		Log.info("Click on element" + profile);
-		waitForElementToBeClickableBool(driver, statusTxt, 10);
 		clickElement(statusTxt);
 		Log.info("Click on element" + statusTxt);
 		enterText(statusBox, message);
@@ -67,4 +68,6 @@ public class FacebookHomePage extends BaseTestClass {
 		Log.info("Click on element" + postButton);
 
 	}
+
+
 }

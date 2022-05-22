@@ -24,7 +24,7 @@ public class FacebookLoginPage extends BaseTestClass {
 	}
 
 	/*
-	 * Method to login facebook- Login page
+	 * Method to login facebook
 	 */
 	public void facebookLogin(String emailAddress, String password) {
 		clearText(emailField);

@@ -35,11 +35,10 @@ public class BaseClass {
 	@Parameters("browser")
 	@BeforeClass
 	public void setupApplication(String browser) throws InterruptedException {
-		readConfig();
 		BasicConfigurator.configure();
 		// configure log4j xml file
 		DOMConfigurator.configure("./src/main/resources/log4j2.xml");
-		// PropertyConfigurator.configure("log4j2.properties");
+		readConfig();
 
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
@@ -80,12 +79,20 @@ public class BaseClass {
 
 	}
 
-
+                     
+	/*
+	 *Method to get current date and time
+	 * */
+	
 	public static String getDateTime() {
 		String currentDate = new SimpleDateFormat("yyyy-MM-dd-hhmmss").format(new Date());
 		return currentDate;
 	}
 
+	
+	/*
+	 * Method to read config properties file
+	 * */
 	public void readConfig() {
 		try {
 			prop = new Properties();

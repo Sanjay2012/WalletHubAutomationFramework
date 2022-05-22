@@ -26,7 +26,7 @@ public class WallethubConfirmReviewPage extends BaseTestClass {
 	/* Method to validate post success message */
 
 	public String postSuccessText() {
-		waitForElementToBeVisible(driver, postMessage, 10);
+			waitForElementToBeVisible(driver, postMessage, 10);
 		return postMessage.getText();
 
 	}
@@ -34,8 +34,8 @@ public class WallethubConfirmReviewPage extends BaseTestClass {
 	/* Method to post the review */
 
 	public void confirmPost() {
-		waitForElementToBeVisible(driver, continueBtn, 10);
-		clickElement(continueBtn);
+			waitForElementToBeVisible(driver, continueBtn, 10);
+			clickElement(continueBtn);
 		Log.info("click on " + continueBtn);
 	}
 

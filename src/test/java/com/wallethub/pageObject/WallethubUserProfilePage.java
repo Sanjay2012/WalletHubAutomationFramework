@@ -22,13 +22,19 @@ public class WallethubUserProfilePage extends BaseTestClass {
 
 	}
 
-	/* Method to get element text */
+	/* 
+	 * Method to get username 
+	 * */
 	public String getUserName() {
 		waitForElementToBeVisible(driver, profileName, 20);
 		return profileName.getText();
 
 	}
 
+	
+	/* 
+	 * Method to get desired text from page
+	 * */
 	public String recommendText() {
 		waitForElementToBeVisible(driver, recommendTxt, 20);
 		return recommendTxt.getText();
